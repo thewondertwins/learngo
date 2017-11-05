@@ -1,3 +1,3 @@
-# Learn Go
+# 学习 Go 语言
 
-Learn Go is a community sourced book for experienced developers coming to Go from other languages.  Rather than focusing on teaching fundamental patterns, we will focus on how to apply the knowledge you already have to Go.
+《学习 Go 语言》是一本写给有经验的开发者从其他语言迁移到 Go 语言的众包书。相对于聚焦于教受基础的开发模式，我们更加倾向于如何将已有知识运用到 Go 中去。
