@@ -1,10 +1,10 @@
 #!/bin/bash
 
-ROOT=/home/bketelsen/src/github.com/thewondertwins/gobook
+ROOT=/home/bketelsen/src/github.com/thewondertwins/learngo
 TARGET=/opt/caddy/_book
 
 cd $ROOT
 git pull
 gitbook build
-sudo cp -R /home/bketelsen/src/github.com/thewondertwins/learngo /opt/caddy/_book
-sudo chown -R www-data:www-data /opt/caddy/_book
+sudo cp -R $ROOT $TARGET
+sudo chown -R www-data:www-data $TARGET
