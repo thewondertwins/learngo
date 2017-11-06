@@ -146,7 +146,7 @@ A GOPATH is a workspace for one or more Go projects.
 
 GOPATH is the root of the workspace and it contains three directories:
 
-.image syntaxtypes/images/gopath.png  400 600 
+![Go Path](./gopath.png)
 
 # Packages
 
@@ -189,11 +189,11 @@ However, it's possible to have "clean rooms" for different sets of projects or e
 
 # Exercise
 
-Exercise
+
 
 Read the first half of the article here then do the exercises "Your First Program" and "Your First Library"
 
-.link https://golang.org/doc/code.html Getting Started with Go
+[Getting Started with Go](https://golang.org/doc/code.html) 
 
 This article tells you to set GOPATH to $HOME/work... ignore that. *DO NOT CHANGE THE GOPATH YOU HAVE ALREADY EXPORTED*
 
