@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ROOT=/home/bketelsen/src/github.com/thewondertwins/learngo
-TARGET=/opt/caddy/_book
+TARGET=/opt/caddy/
 
 cd $ROOT
 git pull
