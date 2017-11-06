@@ -110,3 +110,10 @@ From your command prompt type `go` and hit return to see the various tools the `
 	go env
 	go list
 	go version
+
+## Download Material
+
+From your command prompt use the `go` command to download the materials and exercises for this book:
+
+	go get github.com/thewondertwins/learngo
+
