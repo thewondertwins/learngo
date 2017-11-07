@@ -1,27 +1,28 @@
 # Getting Started
 
-## Installing Go 
+## Installing Go
 
 Mac or Linux
 
 Download and install Go - always use the packages from golang.org - never use homebrew or apt-get, yum, etc. They're broken, or worse -- modified by someone upstream.
 
-Set a GOPATH in .bashrc, .bash_profile, .zshrc etc:
+Set the `GOPATH` environment variable in `.bashrc`, `.zshrc` or similar.
+Typically this is a `go` directory in your home. Also set up `GOROOT` to point
+to your Go installation and add the Go binaries to your path:
 
-	export GOPATH=$HOME/go
+```sh
+export GOROOT="/usr/local/go"
+export GOPATH="$HOME/go"
+export PATH="${PATH}:${GOROOT}/bin"
+```
 
-Add go binaries (compilers and tools) to your path:
-
-	export PATH=$PATH:/usr/local/go/bin
-
-Log out and back in to get the changes or
+Log out and back in (or create a new terminal) to get the changes or
 
 	$ source .bashrc
 
 to hot-reload.
 
-
-## Installing Go 
+## Installing Go
 
 Windows
 
@@ -33,12 +34,12 @@ Set a GOPATH in user Environment Variables
 
 Add go binaries (compilers and tools) to your path:
 
-	%userdir%/go/bin	
+	%userdir%/go/bin
 
 ## Verify Installation
 
 From a command prompt:
-	
+
 	go version
 
 You should see something like:
@@ -50,11 +51,11 @@ You should see something like:
 
 Popular Go Editors:
 
-vim and neovim with vim-go plugin 
+vim and neovim with vim-go plugin
 
 emacs with go-mode.el
 
-Visual Studio Code with vscode-go (works with debugging!) 
+Visual Studio Code with vscode-go (works with debugging!)
 
 Atom with go-plus
 
@@ -85,16 +86,16 @@ Therefore: No file IO, nothing useful with time or dates, can't use any external
 
 Even with all those limitations Go developers love the Go Playground - it's a great place to share code, even if it can't run or compile. You can enter code then click the "SHARE" button which will give you a permanent URL to that code.
 
-Try it now with this link: 
+Try it now with this link:
 
-[Hello World!](https://play.golang.org/p/992fMmkkxr) 
+[Hello World!](https://play.golang.org/p/992fMmkkxr)
 
 ## The Go Command
 
 All of your command line interaction with Go will be through the `go` command.
 
 Several common commands:
-	
+
 	go build some/package
 	go run main.go
 	go test some/package
