@@ -13,6 +13,7 @@
 * [Polish](pl/)
 * [Portuguese](pt/)
 * [Russian](ru/)
+* [Romanian](ro/)
 * [Swedish](sv/)
 * [Turkish](tr/)
 * [Ukranian](uk/)
