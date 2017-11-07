@@ -1,9 +1,5 @@
 # Pointers and Reference Types
 
-
-
-# Pointers and Reference Types
-
 Arrays have a fixed length and fixed data type.
 
 - Array Example
