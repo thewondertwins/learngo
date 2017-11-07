@@ -10,7 +10,6 @@
 * [Japanese](ja/)
 * [Korean](ko/)
 * [Dutch](nl/)
-* [Norweigian](no/)
 * [Polish](pl/)
 * [Portuguese](pt/)
 * [Russian](ru/)
@@ -21,3 +20,5 @@
 
 
 [Language codes](https://www.loc.gov/standards/iso639-2/php/code_list.php)
+
+[Help Translate This Book](https://github.com/thewondertwins/learngo)
