@@ -57,6 +57,10 @@ typings/
 # dotenv environment variables file
 .env
 
+# Vim temp files
+*.swp
+*.swo
+
 _book
 log.txt
 .DS_Store
