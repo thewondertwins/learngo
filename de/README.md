@@ -1,4 +1,4 @@
-# Lerne Go (das Buch)
+# Lerne Go
 
 Lerne Go ist Community Buch für erfahrene Entwickler die Go lernen möchten und Erfahrungen mit anderen Progarmmiersprachen haben.
 Der Focus richtet sich nicht dabei auf das lernen fundamentaler Muster, eher darauf die vorhandene Erfahrung in Go anzuwenden.
