@@ -1,95 +1,94 @@
-# Getting Started
+# 入门
 
-## Installing Go (Mac or Linux)
+## 安装 Go (Mac 或 Linux)
 
-Download and install Go - always use the packages from golang.org - never use homebrew or apt-get, yum, etc. They're broken, or worse -- modified by someone upstream.
+下载并安装 Go - 务必使用来自 golang.org 的包 - 不要使用 homebrew, apt-get, yum 等等。它们有问题，甚至更糟 -- 被上游的谁修改过。
 
-Set a GOPATH in .bashrc, .bash_profile, .zshrc etc:
+在 .bashrc， .bash_profile， .zshrc 等中设定 GOPATH：
 
 	export GOPATH=$HOME/go
 
-Add go binaries (compilers and tools) to your path:
+添加 go 命令（编译器和相关工具）到 PATH 路径：
 
 	export PATH=$PATH:/usr/local/go/bin
 
-Log out and back in to get the changes or
+退出并重新登录，或者
 
 	$ source .bashrc
 
-to hot-reload.
+做热加载。
 
+## 安装 Go (Windows)
 
-## Installing Go (Windows)
+从 golang.org 下载并安装 Go - 使用 MSI 安装
 
-Download and install Go from golang.org - Use MSI installer
-
-Set a GOPATH in user Environment Variables
+在用户环境变量中设置 GOPATH
 
 	GOPATH=%userdir%/go
 
-Add go binaries (compilers and tools) to your path:
+添加 go 命令（编译器和相关工具）到 path 路径：
 
 	%userdir%/go/bin	
 
-## Verify Installation
+## 验证安装
 
-From a command prompt:
+在命令行中输入：
 	
 	go version
 
-You should see something like:
+应当显示类似如下信息：
 
 	go version 1.8 linux/amd64
 
 
-## Editing Go Code
+## 编辑 Go 代码
 
-Popular Go Editors:
+流行的 Go 编辑器包括：
 
-vim and neovim with vim-go plugin 
+安装了 vim-go 插件的 vim 或 neovim
 
-emacs with go-mode.el
+带有 go-mode.el 的 emacs
 
-Visual Studio Code with vscode-go (works with debugging!) 
+Visual Studio Code 加 vscode-go (可以调试！) 
 
-Atom with go-plus
+Atom 加 go-plus
 
-IntelliJ IDEA with Go plugin
+IntelliJ IDEA 加 Go 插件
 
 
-## The Go Playground
+## Go 游乐场
 
-Even if you don't have an editor configured locally you can still play with Go from your browser.
+即使在本地环境中没有安装合理设定的编辑器，你仍然可以在浏览器中和 Go 一起玩耍。
 
-[The Go Playground](https://play.golang.org)
+[Go 游乐场](https://play.golang.org)
 
-The Go Playground is a web service that runs on golang.org's servers. The service receives a Go program, compiles, links, and runs the program inside a sandbox, then returns the output.
+Go 游乐场是一个运行在 golang.org 的服务器上的 Web 服务。服务器收到一个 Go 程序后，会编译，链接并且在沙盒中运行，最后输出结果。
 
-## Playground Limitations
+## 游乐场的限制
 
-There are limitations to the programs that can be run in the playground:
+游乐场对其可运行的程序有一些限制：
 
-The playground can use most of the standard library, with some exceptions. The only communication a playground program has to the outside world is by writing to standard output and standard error.
+除了一些例外，游乐场可以使用大多数标准库。游乐场中，程序对外通讯的唯一方式是向标准输出和标准错误输出写数据。
 
-In the playground the time begins at 2009-11-10 23:00:00 UTC (determining the significance of this date is an exercise for the reader). This makes it easier to cache programs by giving them deterministic output.
+游乐场的时间开始于 2009-11-10 23:00:00 UTC (找出为什么是这个时间，是留给读者的一个练习)。通过提供确定的输出结果，这使得缓存程序更加容易。
 
-There are also limits on execution time and on CPU and memory usage.
+对于执行时间，CPU 时间和内存使用同样有限制。
 
-Therefore: No file IO, nothing useful with time or dates, can't use any external packages.
+因此：没有文件 IO，时间日期毫无意义，不能使用任何外部包。
 
-##  The Go Playground
+##  Go 游乐场
 
-Even with all those limitations Go developers love the Go Playground - it's a great place to share code, even if it can't run or compile. You can enter code then click the "SHARE" button which will give you a permanent URL to that code.
+尽管有如此之多的限制，Go 的开发者仍然热衷使用 Go 游乐场 - 它使得分享代码变得容易，即使代码无法被执行或编译。你可以输入代码，点击“分享”按钮得到这段代码的永久 URL 地址。
 
-Try it now with this link: 
+使用以下链接赶紧试试：
 
 [Hello World!](https://play.golang.org/p/992fMmkkxr) 
 
-## The Go Command
+## Go 命令
 
-All of your command line interaction with Go will be through the `go` command.
+所有命令行下和 Go 的交互都是通过 `go` 命令完成的。
 
-Several common commands:
+一些常见的命令：
 	
 	go build some/package
 	go run main.go
@@ -99,17 +98,17 @@ Several common commands:
 
 
 
-## Exercise
+## 练习
 
-From your command prompt type `go` and hit return to see the various tools the `go` command implements.  Try some like:
+在命令行下输入 `go` 并回车查看 `go` 命令具有的各种工具。尝试以下这些：
 
 	go env
 	go list
 	go version
 
-## Download Material
+## 下载课件
 
-From your command prompt use the `go` command to download the materials and exercises for this book:
+在命令行下使用 `go` 命令下载本书的课件和练习：
 
 	go get github.com/thewondertwins/learngo
 
