@@ -2,6 +2,11 @@
 
 《探析 Go 语言》是一本写给有经验的开发者从其他语言迁移到 Go 语言的众包书。相对于聚焦于教受基础的开发模式，我们更加倾向于如何将已有知识运用到 Go 中去。
 
+<<<<<<< HEAD
 本书将作为 Brian Ketelsen 的 Go 训练课程的学习材料。而这些学习材料作为起点，会持续更新并接受任何人的任何贡献。
 
 本书将会从 [Github](https://github.com/thewondertwins/learngo) 上的源代码进行持续集成。你可以在 Github 贡献新的内容或者进行翻译。欢迎所有级别的作者和翻译者加入这个教育项目。
+=======
+
+This book is continuously deployed from the source code on [Github](https://github.com/thewondertwins/learngo).  You can contribute new content and translations there.  Authors and translators of all experience levels are welcomed and encouraged to join this educational project.
+>>>>>>> upstream/master
