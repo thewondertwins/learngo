@@ -1,8 +1,6 @@
 # Getting Started
 
-## Installing Go 
-
-Mac or Linux
+## Installing Go (Mac or Linux)
 
 Download and install Go - always use the packages from golang.org - never use homebrew or apt-get, yum, etc. They're broken, or worse -- modified by someone upstream.
 
@@ -21,11 +19,9 @@ Log out and back in to get the changes or
 to hot-reload.
 
 
-## Installing Go 
+## Installing Go (Windows)
 
-Windows
-
-Download and install Go - Use MSI installer
+Download and install Go from golang.org - Use MSI installer
 
 Set a GOPATH in user Environment Variables
 
