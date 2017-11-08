@@ -1,5 +1,5 @@
 # 概要
 
 * [介绍](README.md)
-* [Getting Started](getting-started/README.md)
-* [Syntax and Types](syntaxtypes/README.md)
+* [入门](getting-started/README.md)
+* [语法和类型](syntaxtypes/README.md)
