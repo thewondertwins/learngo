@@ -12,6 +12,7 @@
 * [Dutch](nl/)
 * [Polish](pl/)
 * [Portuguese](pt/)
+* [Brazilian Portuguese](pt-br/)
 * [Russian](ru/)
 * [Romanian](ro/)
 * [Swedish](sv/)
