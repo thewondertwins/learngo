@@ -1,5 +1,5 @@
-# Summary
+# Sumar
 
-* [Introduction](README.md)
-* [Getting Started](getting-started/README.md)
-* [Syntax and Types](syntaxtypes/README.md)
+* [Introducere](README.md)
+* [Noțiuni de bază](getting-started/README.md)
+* [Sintaxă și tipuri de date](syntaxtypes/README.md)

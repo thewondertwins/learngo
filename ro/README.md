@@ -1,7 +1,7 @@
 # Learn Go
 
-Learn Go is a community sourced book for experienced developers coming to Go from other languages.  Rather than focusing on teaching fundamental patterns, we will focus on how to apply the knowledge you already have to Go.
+Learn Go este o carte care reprezintă efortul cumulat al unei întregi comunități, fiind destinată programatorilor ce dețin experiență în alte limbaje de programare și care doresc să învețe Go.  În loc să ne axam pe conceptele fundamentale, ne vom focusa pe ideea de a aplica cunoștințele deja dobândite în procesul de învățare a limbajului Go.
 
-This book will be seeded with learning materials from Brian Ketelsen's Go training classes.  These materials are simply a starting point.  The book should be a living document, and open to contributions of all sizes from anyone.
+Aceasta carte va fi alimentată cu materiale didactice despre Go din cursurile de pregătire ale lui Brian Ketelsen.  Aceste materiale reprezintă doar punctul de plecare.  Cartea se dorește a fi un document de referință, deschisă contribuțiilor de orice natură ale oricărui dorește acest lucru.
 
-This book is continuously deployed from the source code on [Github](https://github.com/thewondertwins/learngo).  You can contribute new content and translations there.  Authors and translators of all experience levels are welcomed and encouraged to join this educational project.
+Cartea este actualizată continuu prin intermediul codului sursă situat la adresa de [Github](https://github.com/thewondertwins/learngo).  Oricine poate contribui cu conținut nou și traduceri la adresa menționată anterior.  Autori și traducători, indiferent de nivelul de experiență, sunt bineveniți și încurajați să se alăture inițiativei de dezvoltarea a acestui proiect educațional.

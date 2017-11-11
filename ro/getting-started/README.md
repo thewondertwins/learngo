@@ -1,119 +1,119 @@
-# Getting Started
+# Noțiuni de baza
 
-## Installing Go 
+## Instalare Go 
 
-Mac or Linux
+Mac sau Linux
 
-Download and install Go - always use the packages from golang.org - never use homebrew or apt-get, yum, etc. They're broken, or worse -- modified by someone upstream.
+Descarcă și instalează Go - întotdeauna utilizează pachetele oficiale pe care le poți găsi la adresa golang.org - niciodată nu utiliza homebrew sau apt-get, yum, etc. Sunt defecte sau mai rău de atât -- modificate de către cineva pe serverul de download.
 
-Set a GOPATH in .bashrc, .bash_profile, .zshrc etc:
+Seteaza variabila de mediu GOPATH în .bashrc, .bash_profile, .zshrc etc:
 
-	export GOPATH=$HOME/go
+    export GOPATH=$HOME/go
 
-Add go binaries (compilers and tools) to your path:
+Adaugă executabilele de Go (compilatoare sau instrumente) în variabila de mediu PATH:
 
-	export PATH=$PATH:/usr/local/go/bin
+    export PATH=$PATH:/usr/local/go/bin
 
-Log out and back in to get the changes or
+Restartează sesiunea de terminal pentru a putea observa schimbările efectuate sau execută următoarea comanda
 
-	$ source .bashrc
+    $ source .bashrc
 
-to hot-reload.
+pentru hot-reload.
 
 
-## Installing Go 
+## Instalare Go 
 
 Windows
 
-Download and install Go - Use MSI installer
+Descarcă și instalează Go - Utilizează installer-ul MSI
 
-Set a GOPATH in user Environment Variables
+Setează variabila de mediu GOPATH
 
-	GOPATH=%userdir%/go
+    GOPATH=%userdir%/go
 
-Add go binaries (compilers and tools) to your path:
+Adaugă executabilele de Go (compilatoare sau instrumente) în variabila de mediu PATH:
 
-	%userdir%/go/bin	
+    %userdir%/go/bin    
 
-## Verify Installation
+## Verifică Instalarea
 
-From a command prompt:
-	
-	go version
+Din linia de comandă a unui terminal execută:
+    
+    go version
 
-You should see something like:
+Si ar trebui să vezi ceva asemănător:
 
-	go version 1.8 linux/amd64
-
-
-## Editing Go Code
-
-Popular Go Editors:
-
-vim and neovim with vim-go plugin 
-
-emacs with go-mode.el
-
-Visual Studio Code with vscode-go (works with debugging!) 
-
-Atom with go-plus
-
-IntelliJ IDEA with Go plugin
+    go version 1.8 linux/amd64
 
 
-## The Go Playground
+## Editarea codului Go
 
-Even if you don't have an editor configured locally you can still play with Go from your browser.
+Editoare de Go populare:
 
-[The Go Playground](https://play.golang.org)
+vim sau neovim cu plugin-ul vim-go 
 
-The Go Playground is a web service that runs on golang.org's servers. The service receives a Go program, compiles, links, and runs the program inside a sandbox, then returns the output.
+emacs cu go-mode.el
 
-## Playground Limitations
+Visual Studio Code cu vscode-go (funcționează și pentru debugging!) 
 
-There are limitations to the programs that can be run in the playground:
+Atom cu go-plus
 
-The playground can use most of the standard library, with some exceptions. The only communication a playground program has to the outside world is by writing to standard output and standard error.
+IntelliJ IDEA cu plugin-ul de Go
 
-In the playground the time begins at 2009-11-10 23:00:00 UTC (determining the significance of this date is an exercise for the reader). This makes it easier to cache programs by giving them deterministic output.
 
-There are also limits on execution time and on CPU and memory usage.
+## Playground-ul de Go
 
-Therefore: No file IO, nothing useful with time or dates, can't use any external packages.
+Chiar dacă nu ai un editor configurat local pe calculatorul tău, poți executa și analiza cod Go din browser.
 
-##  The Go Playground
+[Playground-ul de Go](https://play.golang.org)
 
-Even with all those limitations Go developers love the Go Playground - it's a great place to share code, even if it can't run or compile. You can enter code then click the "SHARE" button which will give you a permanent URL to that code.
+Playground-ul de Go este un serviciu web care rulează pe serverele de la adresa golang.org. Serviciul acceptă ca input un program scris în Go pe care îl compilează și îl rulează într-un mediu izolat tip sandbox după care returnează un output.
 
-Try it now with this link: 
+## Limitarile Playground-ului
+
+Exista o serie de limitări priving programele care pot rula în playground:
+
+Playground-ul poate utiliza o mare parte din librăria standard, cu anumite excepții. Singurele mijloace de comunicare ale unui program scris în playground cu autorul său sunt standard output și standard error.
+
+In cadrul playground-ului, timpul de start este considerat a fi 2009-11-10 23:00:00 UTC (lăsăm ca un fel de exercițiu pentru cititor să descopere însemnătatea acestei date). Prin intermediul strategiei de caching, acest aspect conduce la comportamentul determinist al programelor scrise în playground.
+
+Există, de asemenea, limite privind gradul de utilizare a resurselor (CPU și memorie).
+
+In concluzie: Nu sunt permise operațiuni de tip IO cu fișiere, operațiunile cu date și timp sunt destul de limitate și de asemenea nu se pot utiliza pachete externe.
+
+##  Playground-ul de Go
+
+Desi există aceste nenumărate limitări, programatorii de Go adoră acest serviciu - reprezintă un loc ideal de a imparatsi cod cu alți programatori, chiar dacă acel cod nu poate fi compilat sau rulat. Poți insera cod, apoi, prin apăsarea butonului "SHARE", va fi generat un link permanent către codul respectiv. 
+
+Incearcă-l acum cu acest link: 
 
 [Hello World!](https://play.golang.org/p/992fMmkkxr) 
 
-## The Go Command
+## Comanda de terminal Go
 
-All of your command line interaction with Go will be through the `go` command.
+Toate interacțiunile cu limbajul Go din cadrul terminalului se vor face prin intermediul comenzii `go`
 
-Several common commands:
-	
-	go build some/package
-	go run main.go
-	go test some/package
-	go get github.com/someone/package
-	go install some/package
+Mai jos avem câteva comenzi foarte des întâlnite:
+    
+    go build some/package
+    go run main.go
+    go test some/package
+    go get github.com/someone/package
+    go install some/package
 
 
 
-## Exercise
+## Exercițiu
 
-From your command prompt type `go` and hit return to see the various tools the `go` command implements.  Try some like:
+Din linia de comandă a unui terminal scrie `go` și apasă tasta "Enter" pentru a putea observa diversele instrumente asociate comenzii `go`. Încearcă ceva de genul:
 
-	go env
-	go list
-	go version
+    go env
+    go list
+    go version
 
-## Download Material
+## Descărcarea Materialului
 
-From your command prompt use the `go` command to download the materials and exercises for this book:
+Din linia de comandă a terminalului utilizează comandă `go` pentru a putea descărca materialele didactice și exercițiile din această carte:
 
-	go get github.com/thewondertwins/learngo
+    go get github.com/thewondertwins/learngo
 
