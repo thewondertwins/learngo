@@ -1,4 +1,4 @@
-# Tipi: Puntatore e Riferimento
+# Puntatori e tipi di riferimento
 
 Gli array hanno una capacità prefissata, e un tipo predefinito.
 
