@@ -1,201 +1,198 @@
-# Syntax and Types
+# Sintaxă și tipuri de date
 
-Go has built-in types that aren't surprising.
+Tipurile de date pe care le întâlnim în Go sunt cele pe care majoritatea programatorilor le cunosc deja din alte limbaje de programare.
 
-	uint8       the set of all unsigned  8-bit integers (0 to 255)
-	uint16      the set of all unsigned 16-bit integers (0 to 65535)
-	uint32      the set of all unsigned 32-bit integers (0 to 4294967295)
-	uint64      the set of all unsigned 64-bit integers (0 to 18446744073709551615)
-	int8        the set of all signed  8-bit integers (-128 to 127)
-	int16       the set of all signed 16-bit integers (-32768 to 32767)
-	int32       the set of all signed 32-bit integers (-2147483648 to 2147483647)
-	int64       the set of all signed 64-bit integers (-9223372036854775808 to 9223372036854775807)
-	float32     the set of all IEEE-754 32-bit floating-point numbers
-	float64     the set of all IEEE-754 64-bit floating-point numbers
-	complex64   the set of all complex numbers with float32 real and imaginary parts
-	complex128  the set of all complex numbers with float64 real and imaginary parts
-	byte        alias for uint8
-	rune        alias for int32
+    uint8       numere întregi pozitive cu dimensiunea de 8 biți (de la 0 la 255)
+    uint16      numere întregi pozitive cu dimensiunea de 16 biți (de la 0 la 65535)
+    uint32      numere întregi pozitive cu dimensiunea de 32 biți (de la 0 la 4294967295)
+    uint64      numere întregi pozitive cu dimensiunea de 64 biți (de la 0 la 18446744073709551615)
+    int8        numere întregi cu dimensiunea de 8 biți (de la -128 la 127)
+    int16       numere întregi cu dimensiunea de 16 biți (de la -32768 la 32767)
+    int32       numere întregi cu dimensiunea de 32 biți (de la -2147483648 la 2147483647)
+    int64       numere întregi cu dimensiunea de 64 biți (de la -9223372036854775808 la 9223372036854775807)
+    float32     numere raționale (zecimale) definite conform IEEE-754 cu dimensiunea de 32 biti
+    float64     numere raționale (zecimale) definite conform IEEE-754 cu dimensiunea de 64 biti
+    complex64   numere complexe având partea reală și cea imaginară compuse din numere de tip float32
+    complex128  numere complexe având partea reală și cea imaginară compuse din numere de tip float64
+    byte        alias pentru uint8
+    rune        alias pentru int32
 
-# Implementation Specific Types
+# Tipuri de date specifice arhitecturii utilizate
 
-Implementation specific types.  (64 bit size on 64 bit platform, 32 bit on 32 bit platform)
+Tipuri de date specifice arhitecturii utilizate.  (64 biți pe platforme de 64 biți, 32 biți pe platforme de 32 biti)
 
-	uint     either 32 or 64 bits
-	int      same size as uint
-	uintptr  an unsigned integer large enough to store the uninterpreted bits of a pointer value
+    uint     32 sau 64 biți în funcție de arhitectura utilizată
+    int      aceeași definiție ca și la uint
+    uintptr  număr întreg pozitiv având dimensiunea suficient de mare încât să poată stoca valoarea unui pointer sub formă de biți neinterpretați ("raw bytes")
 
-# Non Number Types
+# Tipuri de date non-numerice
 
-string and bool
+string și bool
 
-	string  the set of string values
-	bool    a boolean (true/false) value
+    string  valori care conțin șiruri de caractere
+    bool    valoare de tip boolean (true/false)
 
-# Declaring and Assigning Values to Variables
+# Declararea variabilelor și asignarea de valori
 
-Without initialization
+Fără inițializare
 
-	cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/withoutinit
-	go run main.go
+    cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/withoutinit
+    go run main.go
 
 
-With initialization, explicit type
+Cu inițializare, tip de date explicit
 
-	cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/explicit
-	go run main.go
+    cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/explicit
+    go run main.go
 
-With initialization, implicit type
+Cu inițializare, tip de date implicit
 
-	cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/implicit
-	go run main.go
+    cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/implicit
+    go run main.go
 
-All three produce an integer that is indistinguishable from the others. With the implicit declaration, the compiler determines the type of the variable at compile time (not run time).
+Toate cele trei exemple de mai sus conduc la inițializarea aceluiași număr întreg. Prin intermediul declarării implicite, compilatorul deduce tipul de date al variabilei în etapa de compilare (și nu de rulare).
 
-# Zero Values in Go
+# Valori de tip zero în Go
 
-All builtin types have a zero value. Any allocated variable is usable even if it never has a value assigned.
+Toate tipurile de date elementare au o valoare de tip zero. Astfel, orice variabilă alocată este utilizabilă chiar dacă nu i-a fost asignată nicio valoare în decursul unui program.
 
-	cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/zero
-	go run main.go
+    cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/zero
+    go run main.go
 
-# Constants
+# Constante
 
-Constants are variables that can't be modified at run time.
+Constantele sunt variable a căror valoare nu poate fi schimbată în etapa de rulare.
 
-	cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/constantstring
-	go run main.go
+    cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/constantstring
+    go run main.go
 
-	cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/constantnumber
-	go run main.go
+    cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/constantnumber
+    go run main.go
 
-Modifying Constants Example - Fail!
+Exemplu cu modificarea valorii unei constante - Eroare!
 
-	cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/modifyconst
-	go run main.go
+    cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/modifyconst
+    go run main.go
 
 # Iota
 
-Sometimes you want to declare constants that follow a sequence:
+Uneori ne dorim să declarăm o serie de constante care urmăresc o anumită secvență numerică:
 
-	cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/sequence
-	go run main.go
+    cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/sequence
+    go run main.go
 
-That's sort of ugly. Go gives us a compile time helper called iota that lets you skip the repetition:
+Exemplul de mai sus este destul de urât în ceea ce privește frumusețea codului scris. Go furnizează o structura ajutătoare numită iota astfel încât să putem evita repetiția redundantă:
 
-Sequence with Iota
+Secvență definită cu iota
 
-	cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/iota
-	go run main.go
+    cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/iota
+    go run main.go
 
-Notice the difference between the two versions? Iota always starts at 0.
+Ai observat diferența dintre cele două versiuni? Iota va porni tot timpul de la 0.
 
-Skip the first value of iota
+Exemplu care demonstrează cum putem sări peste prima valoare a lui iota
 
-	cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/iotaskip
-	go run main.go
+    cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/iotaskip
+    go run main.go
 
-# Structs
+# Structuri
 
-A struct is a collection of fields.
+O structura reprezintă o colecție de câmpuri.
 
-Structs are types with zero or more fields.
+Structurile sunt tipuri de date cu zero sau mai multe câmpuri definite.
 
-Struct Example:
+Exemplu de structura:
 
-	cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/structs
-	go run main.go
+    cd $GOPATH/src/github.com/thewondertwins/learngo/material/syntaxtypes/demos/structs
+    go run main.go
 
-Fields in a struct are called members. Reference them using a period and the field name.
+Câmpurile din cadrul unei structuri sunt numite membri. Îi putem accesa prin intermediul unui punct urmat de numele acestuia.
 
 
-# Code Organization
+# Organizarea codului
 
-Go code is organized in packages. A package represents all the files in a single directory on disk. One directory can contain only files from the same package. 
+Codul scris în Go este organizat în pachete. Un pachet este reprezentat de toate fișierele situate într-un anumit director pe disk-ul utilizatorului. Un director poate conține doar fișiere aparținând aceluiași pachet.
 
-You've seen this already several times. Our examples so far have all used package "main" declared at the top of the file.
+Ai văzut deja acest aspect în exemplele precedente. Toate aceste exemple au utilizat pachetul "main" ca prima formulare în capul fișierului.
 
-# Code Organization
+# Organizarea codului
 
-Source files in a package must declare the package name at the top of the file as the first code statement:
+Fisirele care conțin codul sursă din cadrul unui pachet trebuie să declare ca prima formulare numele pachetului din care fiecare ditre acestea face parte:
 
-	// Package declaration
-	package main
+    // Declararea pachetului
+    package main
 
-Executable programs must have a "main" package that declares a main() function:
+Programele executabile trebuie în mod obligatoriu să declare un pachet "main" care să conțină o funcție main():
 
-	func main() { ...  }
+    func main() { ...  }
 
-Library code must declare a package name that matches the folder name it lives in. Code in folder "server" has to declare "package server".
+Codul din cadrul librăriilor trebuie să declare numele pachetului ca fiind același cu numele directorului unde acesta se află. De exemplu, codul din directorul "server" trebuie să declare în capul fiecărui fișier din acest director formularea "package server".
 
-# Scope
+# Vizibilitate
 
-All variables and types declared inside a package are visible to everything else in the same package.
+Toate variabilele și tipurile declarate în cadrul unui pachet sunt vizibile oriunde în interiorul acelui pachet.
 
-That means no "public" "private" "protected" modifiers.
+Acest aspect conduce la ideea că nu există modificatori de acces de tipul "public", "protected" sau "private".
 
-External visibility is controlled by capitalization. Types and Functions that start with a capital letter are available outside the current package. Types and functions that start with a lower case letter are unexported, not available outside the current package.
+Vizibilitatea unei structuri de date în exterioul pachetului este dată de ideea de majusculă. Astfel, tipurile sau funcțiile al căror nume începe cu litera mare sunt vizibile în afara pachetului curent. Cele al căror nume începe cu litera mică nu sunt vizibile în afara pachetului curent.
 
-We call this concept Exporting. A symbol that is visible outside its package is "exported".
+Numim acest concept Externalizare. Un simbol care este vizibil în afara pachetului în care a fost declarat se numește a fi "externalizat".
 
-# Package Resolution
+# Rezoluția la nivel de pachet
 
-When you installed Go earlier, you set a GOPATH environment variable in your shell.
+Cand ai instalat Go mai devreme ai setat variabila de mediu GOPATH în terminal.
 
-A GOPATH is a workspace for one or more Go projects.
+GOPATH reprezintă un workspace pentru mai multe proiecte scrise în Go.
 
-GOPATH is the root of the workspace and it contains three directories:
+GOPATH reprezintă rădăcina workspace-ului și conține trei directoare:
 
 ![Go Path](./gopath.png)
 
-# Packages
+# Pachete
 
-Your source code, and the code your applications depend on lives in "src".
+Codul tău sursă, precum și codul de care aplicațiile tale depind se situează în directorul "src".
 
-When you build an application, it's placed in "bin".
+Cand se face build pe o aplicație, executabilul final este plasat în directorul "bin".
 
-When you compile any library, it's placed in "pkg", under a subdirectory for your computer's architecture. like pkg/darwin_amd64.
+Cand se compilează o librărie, versiunea compilată este plasată în directorul "pkg", într-un subdirector corespunzător arhitecturii utilizate de calculator. precum pkg/darwin_amd64.
 
-All of this is important because your GOPATH is what determines how the go compiler resolves your references to packages in code.
+Toate aceste aspecte sunt importante deoarece variabila de mediu GOPATH determina modul în care compilatorul reușește să rezolve problema dependințelor dintre diversele pachete în codul sursă.
 
-# Package Resolution
+# Rezoluția la nivel de pachet
 
-If your code lives at $GOPATH/src/blue/red, it's package name is "red" and you would import that code with the following statement:
+Spre exemplu, im ipoteza în care codul sursă se poate găsi pe disk la adresa $GOPATH/src/blue/red, numele pachetului va fi "red" și vei importa codul respectiv cu următoarea formulare:
 
-	import "blue/red"
+    import "blue/red"
 
-We call "blue/red" the import path of the package.
+Numim "blue/red" calea de import a pachetului.
 
-Packages that live in source code repositories like github and bitbucket have the full location of the repository as part of their import path. A project in my github repository called "captainhook" has the import path:
+Pachetele care se află în surse precum github sau bitbucket trebuie importate împreună cu numele provider-ului în calea de import. Spre exemplu, un proiect aflat pe github numit "captainhook" va avea calea de import:
 
-	"github.com/bketelsen/captainhook"
+    "github.com/bketelsen/captainhook"
 
-# Package Resolution
+# Rezoluția la nivel de pachet
 
-Therefore in order to use that package in your code, that package MUST live at:
+Prin urmare, pentru a putea utiliza pachetul respectiv în cod, acesta TREBUIE să fie situat la locația:
 
-	$GOPATH/src/github.com/bketelsen/captainhook
+    $GOPATH/src/github.com/bketelsen/captainhook
 
-If captainhook were a library instead of an executable, when it's compiled, the compiled version of the package would be placed at:
+Dacă pachetul captainhook ar fi fost o librărie în loc de executabil, după etapa de compilare, versiunea compilată a pachetului va fi plasată la următoarea locație:
 
-	$GOPATH/pkg/darwin_amd64/github.com/bketelsen/captainhook
-	(Assuming you compiled it on a Mac)
+    $GOPATH/pkg/darwin_amd64/github.com/bketelsen/captainhook
+    (Presupunând că procesul de compilare s-a executat pe Mac)
 
-# Packages and GOPATH
+# Pachete și GOPATH
 
-The vast majority of developers will use one GOPATH, set it as an environment variable and forget about it. 
+Marea majoritate a programatorilor vor utiliza o singură variabilă de mediu GOPATH, va fi setată la început și apoi putem uita de ea.
 
-However, it's possible to have "clean rooms" for different sets of projects or even an individual project by simply creating a new GOPATH and setting the environment variable to that new location.
+Cu toate acestea, este posibil să ne dorim să avem așa numitele "camere curate" pentru diverse proiecte sau poate chiar un proiect separat prin crearea unei variabile de mediu GOPATH care să pointeze la locația dorită.
 
-# Exercise
-
-
-
-Read the first half of the article here then do the exercises "Your First Program" and "Your First Library"
-
-[Getting Started with Go](https://golang.org/doc/code.html) 
-
-This article tells you to set GOPATH to $HOME/work... ignore that. *DO NOT CHANGE THE GOPATH YOU HAVE ALREADY EXPORTED*
+# Exercițiu
 
 
 
+Citește prima jumătate a articolului următor apoi rezolvă exercițiile "Your First Program" și "Your First Library"
+
+[Notiuni de baza despre Go](https://golang.org/doc/code.html) 
+
+Acest articol îndrumă utilizatorul să seteze GOPATH astfel încât să pointeze către $HOME/work...ignoră acest sfat. *NU SCHIMBA GOPATH DACĂ A FOST DEJA SETATĂ ÎN PREALABIL*
