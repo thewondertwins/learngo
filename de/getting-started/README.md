@@ -67,17 +67,17 @@ Der Go Spielplatz ist ein Web Dienst, der auf den golang.org Webservern zur Verf
 
 Es gibt einige Einschränkungen für den Spielplatz:
 
-Im Spielplatz kann fast alles, mit einigen Ausnahmen, aus der Standard Blibliothek benutzt werden. Die einzige Kommunikationsmöglichkeit für ein Go Programm (im Spielplatz) zur Aussenwelt ist, über den Standard Output und Standard Error.
+Im Spielplatz kann fast alles, mit einigen Ausnahmen, aus der Standard Blibliothek benutzt werden. Die einzige Kommunikationsmöglichkeit für ein Go Programm (im Spielplatz) zur Außenwelt ist, über den Standard Output und Standard Error.
 
 Im Spielplatz beginnt die Zeit mit 2009-11-10 23:00:00 UTC (die Bedeutung dieses Datums vorher zubestimmen, ist eine Übung für den Leser). Dies erleichtert das Zwischenspeichern von Programmen, indem ihnen eine vorher bestimmbare Ausgabe gegeben wird.
 
 Es gibt Einschränkungen für die Ausführungszeit der CPU und Speichernutzung.
 
-Deswegen: keine Datei Ein- und Ausgabe, nichts brauchbares für Zeit und Datum, keine Benutzung externer Packete.
+Deswegen: Keine Datei Ein- und Ausgabe, nichts brauchbares für Zeit und Datum, keine Benutzung externer Pakete.
 
 ## Der Go Spielplatz
 
-Gerade mit all diesen Einschränkungen, Go Entwickler lieben den Spielplatz - es ist ein großartiger Bereich um Code zu teilen, gerade auch wenn der Code nicht kompiliert oder läuft. Man kann Code einfügen und dann den "Teilen" (Share) knopf drücken und erhält eine permanente URL zu diesem Code.
+Gerade mit all diesen Einschränkungen, Go Entwickler lieben den Spielplatz - es ist ein großartiger Bereich um Code zu teilen, gerade auch wenn der Code nicht kompiliert oder läuft. Man kann Code einfügen und dann den "Teilen" (Share) Knopf drücken und erhält eine permanente URL zu diesem Code.
 
 Versuche es einmal mit disem Link:
 
@@ -98,15 +98,15 @@ Verschiedene gebräuchliche Kommandos:
 
 ## Übung
 
-Von der Kommandozeile aus gib `go` ein und drücke Enter um zu sehen welche verschiedenen Werkzeuege das `go`Kommando beinhaltet. Versuche etwas wie dieses:
+Von der Kommandozeile aus gib `go` ein und drücke Enter um zu sehen welche verschiedenen Werkzeuge das `go`Kommando beinhaltet. Versuche etwas wie dieses:
 
 	go env
 	go list
 	go version
 
-## lade zusätzliches Material herunter
+## Lade zusätzliches Material herunter
 
 von der Kommandozeile, benutze das Kommando `go` um zusätzliches Material und Übungen zu diesem Buch herunterzuladen:
 
-go get github.com/thewondertwins/learng	
+go get github.com/thewondertwins/learngo	
 
