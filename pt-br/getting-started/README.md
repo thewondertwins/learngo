@@ -1,32 +1,33 @@
-# Para começar
+# Como começar
 
-## Instale Go (Mac ou Linux)
+## Instalando Go (Mac ou Linux)
 
-Baixe e instale Go - sempre utilize os pacotes de golang.org e nunca use `homebrew`, `apt-get`, `yum`, etc. Esses arquivos podem estar quebrados ou terem sido modificados por seus criadores.
+Baixe e instale Go - sempre utilize os pacotes disponíveis em golang.org e nunca use `homebrew`, `apt-get`, `yum`, etc. Esses podem estar quebrados ou, pior, terem sido modificados por outra pessoa.
 
 Crie uma variável GOPATH no seu .bashrc (ou .bash_profile, .zshrc, etc):
 
   export GOPATH=$HOME/go
 
-Adicione os binários Go (compiladores e ferramentas) ao seu PATH:
+Adicione os binários de Go (compiladores e ferramentas) ao seu PATH:
 
   export PATH=$PATH:/usr/local/go/bin
 
 Feche o terminal para salvar as modificações ou utilize
+  
   $ source .bashrc
 
-para fazer um hot-reload.
+para atualizar o ambiente.
 
 
-## Instale Go (Windows)
+## Instalando Go (Windows)
 
-Baixe e instale Go (disponível em golang.org) utilizando o instalador MSI. 
+Baixe e instale Go (disponível em golang.org) - utilize o instalador MSI. 
 
-Crie uma GOPATH entre as variáveis de ambitente utilizadas:
+Configure o GOPATH nas Variáveis de Ambiente:
 
   GOPATH=%userdir%/go
 
-Adicione os binários Go (compiladores e ferramentas) ao seu PATH:
+Adicione os binários de Go (compiladores e ferramentas) ao seu PATH:
 
   %userdir%/go/bin  
 
@@ -41,13 +42,13 @@ Você verá algo como:
   go version 1.8 linux/amd64
 
 
-## Editando código em Go
+## Escrevendo código Go
 
-Editores populares:
+Editores populares para Go:
 
-vim e neovim com o plugin vim-go 
+Vim e Neovim com o plugin vim-go 
 
-emacs com go-mode.el
+Emacs com go-mode.el
 
 Visual Studio Code com vscode-go (funciona com debugging!) 
 
@@ -56,27 +57,27 @@ Atom com go-plus
 IntelliJ IDEA com o plugin Go
 
 
-##  Go Playground
+## Go Playground
 
-Se você não tem um editor configurado na sua máquina, pode codar em Go pelo browser.
+Se você não tem um editor configurado na sua máquina, pode experimentar Go no browser.
 
 [The Go Playground](https://play.golang.org)
 
-O Go Playground roda nos servidores de golang.org. Esse web service recebe um programa em Go, que é compilado, linkado e rodado dentro de uma sandbox para então retornar um output. 
+O Go Playground é um serviço web que roda nos servidores do site golang.org. Esse serviço recebe um programa em Go, que é compilado, linkado e executado dentro de uma sandbox para então exibir o resultado. 
 
 ## Limitações do Playground
 
-Os programas que podem ser rodados no Playground têm algumas limitacões.
+Os programas que podem ser rodados no Playground sofrem algumas limitações.
 
-Pode-se utilizar a maior parte da standard library, com algumas exceções. Um programa que roda no Playground comunica-se com o exterior unicamente escrevendo outputs e erros padrões.
+O Playground pode utilizar a maior parte da standard library, com algumas exceções. A única comunicação com o resto do mundo permitida no Playground é escrever para as saídas padrão (stdout) e de error (stderr).
 
-No Playground, o tempo começa em 2009-11-10 23:00:00 UTC (deixamos a tarefa de descobrir o significado desta data para a leitora e o leitor). Desta maneira, é mais fácil manter um cache dos programas dando a eles outputs determinísticos.
+No Playground, o tempo começa a ser contado a partir de 2009-11-10 23:00:00 UTC (deixamos a tarefa de descobrir o significado desta data para a leitora e o leitor). Desta maneira, é mais fácil manter um cache dos programas dando a eles outputs determinísticos.
 
-Há ainda limites de tempo de execução e de uso de CPU e memória. 
+Existem também limites de tempo de execução e de uso de CPU e memória. 
 
 Resumindo: nenhum arquivo IO; nada útil com tempo ou datas; e não se pode utilizar pacotes externos.
 
-Apesar das limitações, os desenvovledores Go adoram o Go Playground. É um ótimo meio para compartilhar código, mesmo que esse não possa ser rodado ou compilado. Basta escrever o código e clicar no botão "compartilhar" para obter uma URL permanente para aquele conteúdo.
+Apesar dessas limitações, os desenvolvedores Go adoram o Go Playground. É um ótimo lugar para compartilhar código, mesmo que esse não possa ser executado ou compilado. Basta escrever o código e clicar no botão de compartilhar ("Share") para obter uma URL permanente para aquele conteúdo.
 
 Teste agora com este link: 
 
@@ -86,7 +87,7 @@ Teste agora com este link:
 
 Toda a sua interação com Go via terminal será por meio do comando `go`.
 
-Os comandos mais comuns são:
+Alguns comandos básicos:
   
   go build some/package
   go run main.go
@@ -97,7 +98,7 @@ Os comandos mais comuns são:
 
 ## Exercício
 
-Digite `go` no seu terminal e tecle Enter para ver as ferramantas implementadas por este comando. Teste algumas delas, como:
+Digite `go` no seu terminal e tecle Enter para ver as ferramentas implementadas por este comando. Teste algumas delas, como:
 
   go env
   go list
