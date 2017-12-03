@@ -10,7 +10,7 @@ Crie uma variável GOPATH no seu .bashrc (ou .bash_profile, .zshrc, etc):
 
 Adicione os binários de Go (compiladores e ferramentas) ao seu PATH:
 
-  export PATH=$PATH:/usr/local/go/bin
+    export PATH=$PATH:/usr/local/go/bin
 
 Feche o terminal para salvar as modificações ou utilize
   
@@ -42,7 +42,7 @@ Você verá algo como:
     go version 1.8 linux/amd64
 
 
-## Escrevendo código Go
+## Editando código Go
 
 Editores populares para Go:
 
@@ -83,7 +83,7 @@ Teste agora com este link:
 
 [Hello World!](https://play.golang.org/p/992fMmkkxr) 
 
-## Comandos Go
+## O comando go
 
 Toda a sua interação com Go via terminal será por meio do comando `go`.
 
