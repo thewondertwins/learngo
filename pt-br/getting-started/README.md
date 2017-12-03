@@ -6,7 +6,7 @@ Baixe e instale Go - sempre utilize os pacotes disponíveis em golang.org e nunc
 
 Crie uma variável GOPATH no seu .bashrc (ou .bash_profile, .zshrc, etc):
 
-  export GOPATH=$HOME/go
+    export GOPATH=$HOME/go
 
 Adicione os binários de Go (compiladores e ferramentas) ao seu PATH:
 
@@ -14,7 +14,7 @@ Adicione os binários de Go (compiladores e ferramentas) ao seu PATH:
 
 Feche o terminal para salvar as modificações ou utilize
   
-  $ source .bashrc
+    $ source .bashrc
 
 para atualizar o ambiente.
 
@@ -25,21 +25,21 @@ Baixe e instale Go (disponível em golang.org) - utilize o instalador MSI.
 
 Configure o GOPATH nas Variáveis de Ambiente:
 
-  GOPATH=%userdir%/go
+    GOPATH=%userdir%/go
 
 Adicione os binários de Go (compiladores e ferramentas) ao seu PATH:
 
-  %userdir%/go/bin  
+    %userdir%/go/bin  
 
 ## Verifique a instalação
 
 No terminal, digite:
   
-  go version
+    go version
 
 Você verá algo como:
 
-  go version 1.8 linux/amd64
+    go version 1.8 linux/amd64
 
 
 ## Escrevendo código Go
@@ -89,24 +89,24 @@ Toda a sua interação com Go via terminal será por meio do comando `go`.
 
 Alguns comandos básicos:
   
-  go build some/package
-  go run main.go
-  go test some/package
-  go get github.com/someone/package
-  go install some/package
+    go build some/package
+    go run main.go
+    go test some/package
+    go get github.com/someone/package
+    go install some/package
 
 
 ## Exercício
 
 Digite `go` no seu terminal e tecle Enter para ver as ferramentas implementadas por este comando. Teste algumas delas, como:
 
-  go env
-  go list
-  go version
+    go env
+    go list
+    go version
 
 ## Material para download
 
 Utilize o comando `go`, no seu terminal, para baixar os materiais e exercícios deste livro:
 
-  go get github.com/thewondertwins/learngo
+    go get github.com/thewondertwins/learngo
 
