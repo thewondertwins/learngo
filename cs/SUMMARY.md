@@ -2,5 +2,5 @@
 
 * [Úvod](README.md)
 * [Začínáme](getting-started/README.md)
-* [Syntax and Types](syntaxtypes/README.md)
-//* [Pointers and Reference Types](pointersreftypes/README.md)
+* [Syntaxe a Typy](syntaxtypes/README.md)
+* [Ukazatele a typy reference](pointersreftypes/README.md)

@@ -1,6 +1,6 @@
-# Syntax a Typy
+# Syntaxe a Typy
 
-Go používá typy, jejichž výčet vás nijak nepřekvapí.
+Go používá typy, jejichž výčet vás jistě nijak nepřekvapí.
 
 	uint8       rozsah všech kladných celých čísel do 8 bitů (0 až 255)
 	uint16      rozsah všech kladných celých čísel do 16 bitů (0 až 65535)
@@ -126,7 +126,6 @@ Spustitelné programy musí obsahovat balíček "main", který obsahuje funkci m
 
 	func main() { ...  }
 
-Library code must declare a package name that matches the folder name it lives in. Code in folder "server" has to declare "package server".
 Kód knihovny musí deklarovat název balíčku, který odpovídá názvu složky ve které se nachází. Kód ve složce "server" musí deklarovat "package server".
 
 # Scope (Rámec působnosti)
@@ -139,7 +138,7 @@ Externí viditelnost se řeší kapitálkami. Typy a funkce začínající velk�
 
 Tomuto konceptu říkáme exportování. Symbol, který je vidět mimo svůj balíček je "exported" (exportovaný).
 
-# Rozsah balíčků
+# Importování balíčků
 
 Při instalaci Go jste nastavovali proměnnou prostředí GOPATH.
 
@@ -159,7 +158,7 @@ Když zkompilujete jakoukoliv knihovnu, je umístěna do složky "pkg". V ní pa
 
 Důležité je to zejména proto, že vaše GOPATH určuje jak go kompilátor řeší reference na balíčky ve vašem kódu.
 
-# Rozsah balíčků
+# Importování balíčků
 
 Pokud se váš kod nachází v $GOPATH/src/modra/cervena, název balíčku je "cervena" a jeho kód byste importovali za použití následujícího kódu:
 
@@ -171,7 +170,7 @@ Balíčky, které se nachází v repozitářích jako jsou github či bitbucket 
 
 	"github.com/bketelsen/captainhook"
 
-# Rozsah balíčků
+# Importování balíčků
 
 To znamená, že aby bylo možné jej použít ve vašem kódu, balíček se MUSÍ nacházet v:
 

@@ -1,21 +1,25 @@
-# Ukazatele a reference
+# Ukazatele a typy reference
 
 Array (pole) má pevnou délku a pevný datový typ.
 
 - Příklad array
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
 	go run main.go
+	```
 
 
 # Iterace
 
-Polem iterujeme použitím cyklu loop
+Polem iterujeme použitím cyklu for
 
 - Iterování s for
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
 	go run main.go
+	```
 
 
 For je jediný druh cyklu v Go. Používejte jej místo FOR, WHILE, DO WHILE, DO UNTIL, atd.
@@ -26,8 +30,10 @@ Iterovat lze nad jakoukoliv kolekcí s použitím příkazu range. Range je zabu
 
 - Iterování s Range
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
 	go run main.go
+	```
 
 Range je velmi užitečný příkaz, který budete využívat často.
 
@@ -48,8 +54,10 @@ Pokud nevíte že máte konečný a pevný seznam prvků, skoro vždy budete př
 
 - Slice příklady
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/slice
 	go run main.go
+	```
 
 
 # Proč slice?
@@ -71,8 +79,10 @@ Přidání prvků jsme si již ukázali, slice lze rovnou definovat i včetně v
 
 - Inline Deklarace slice
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/slice
 	go run main.go
+	```
 
 
 # Řetězce
@@ -83,8 +93,10 @@ Přidání prvků jsme si již ukázali, slice lze rovnou definovat i včetně v
 
 - Příklad run
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/runes
 	go run main.go
+	```
 
 # Mapy
 
@@ -96,18 +108,22 @@ Mapu inicializujeme přes make() funkci.
 
 - Příklad Mapy
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/maps
 	go run main.go
+	```
 
 
 # Mapy
 
 Klíče map musí být porovnatelné přes "==" a "!=". Jako klíč tedy nelze použít funkce, jiné mapy nebo slice.
 
-- - Mapy lze take deklarovat včetně jejich hodnot:
+- Mapy lze také deklarovat včetně jejich hodnot:
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/mapsinline
 	go run main.go
+	```
 
 # Konkurenčnost map
 
@@ -119,12 +135,14 @@ Do verze GO 1.7 konkurenční přístup k mapě způsobil nestabilitu programu. 
 
 # Ukazatele
 
-Go vás nechá předávat parametry funkce jako hodnoty nebo jako ukazatel. Obecně je dobré předávat jako hodnoty, pokud jsou jen dočasné a nebudou používány po zavolání funkce.
+V Go můžete jako parametry funkce předávat hodnoty nebo ukazatele. Obecně je dobré předávat jako hodnoty, pokud jsou jen dočasné a nebudou používány po zavolání funkce.
 
 - Příklad předání hodnoty
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/passbyval
 	go run main.go
+	```
 
 Všimněte si, že jsme předanou hodnotu jsme nezměnili. Vytvořili jsme nové číslo a to vrátili.
 
@@ -132,8 +150,10 @@ Pokud chcete hodnotu měnit a tyto změny zachovat, předejte je za použití uk
 
 - Příklad předání ukazatele
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/passbyref
 	go run main.go
+	```
 
 # Dereferencování ukazatele
 

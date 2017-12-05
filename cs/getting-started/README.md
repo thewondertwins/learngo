@@ -21,7 +21,7 @@ pro načtení změněné konfigurace.
 
 ## Instalace Go (Windows)
 
-Stáhněye a nainstalujte Go z golang.org - Použijte MSI instalátor
+Stáhněte a nainstalujte Go z golang.org - Použijte MSI instalátor
 
 Přidejte GOPATH mezi uživatelské Proměnné Prostředí
 
@@ -71,7 +71,7 @@ Na programy, které lze spustit v Go Playground se vztahují následující omez
 
 Go Playground smí využívat většinu functionalit ze standardní knihovny. Jediným způsobem jakým může program komunikovat s okolním světěm je poslat výstup do stdout nebo stderr.
 
-Čas v sandboxu vždy začíná v 2009-11-10 23:00:00 UTC (zjištění významu tohoto data je pro čtenáře první z úkolů). Díky tomu lze programy snadněji kešovat protože mají deterministický výstup.
+Čas v sandboxu vždy začíná v 2009-11-10 23:00:00 UTC (zjištění významu tohoto data budiž pro čtenáře prvním úkolem). Díky tomu lze programy snadněji kešovat, protože mají deterministický výstup.
 
 Platí také omezení na čas běhu programu a využití paměti a procesoru.
 
@@ -81,7 +81,7 @@ To znamená: Žádná práce se soubory, nic použitelného co se času týče a
 
 I přes všechna tato omezení se Go Playground těší oblibě mezi Go vývojáři - je to perfektní místo pro sdílení kódu i pokud jej nelze zkompilovat. Můžete zadat kód, kliknout na tlačítko "SHARE" čímž získáte permanentní odkaz k vašemu kódu.
 
-Pojďme to zkusti s tímto kódem:
+Pojďme to zkusit s tímto kódem:
 
 [Hello World!](https://play.golang.org/p/992fMmkkxr) 
 
