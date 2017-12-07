@@ -48,7 +48,7 @@ nápověda: násobení proveďte uvnitř funkce fmt.Println().
 # Slices
 
 
-Pole má vždy fixní délku. Slice, na druhé straně, má dynamickou délku, a je tak flexibilnější než array. V praxi spíše používáme slice než array.
+Zatímco array má vždy fixní délku, Slice má dynamickou délku, a je tak flexibilnější než array. V praxi spíše používáme slice než array.
 
 Pokud nevíte že máte konečný a pevný seznam prvků, skoro vždy budete při práci s daty používat slice.
 
@@ -91,7 +91,7 @@ Přidání prvků jsme si již ukázali, slice lze rovnou definovat i včetně v
 
 Řetězec je vždy jen slice bajtů. Go má zabudovanou podporu pro UTF-8 a výkonné nástroje pro práci s ne-ascii znaky. Zatímco ASCII znaky zabírají pouze jeden bajt, UTF-8 znaky (neboli Runy) můžou zabírat až 4 bajty. Go umí s vícebajtovými runami jednoduše pracovat.
 
-- Příklad run
+- Příklad Run
 
     ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/runes
@@ -127,7 +127,7 @@ Klíče map musí být porovnatelné přes "==" a "!=". Jako klíč tedy nelze p
 
 # Konkurenčnost map
 
-Mapy NEJSOU threadsafe (vláknově bezpečné). Není v pořádku číst nebo modifikovat mapu v dvou různých goroutinách. Na tohle se ještě podíváme v lekcí o kokurenčnosti. Zatím si jen zapamatujte, že pokud máte mapu, která je používána na více místech, přístup k ní by měl být synchronizovaný.
+Mapy NEJSOU threadsafe (vláknově bezpečné). Není v pořádku číst nebo modifikovat mapu v dvou různých goroutinách. Na tohle se ještě podíváme v lekcí o konkurenčnosti. Zatím si jen zapamatujte, že pokud máte mapu, která je používána na více místech, přístup k ní by měl být synchronizovaný.
 
 Do verze GO 1.7 konkurenční přístup k mapě způsobil nestabilitu programu. Od Go verze 1.7 a výše způsobí konkurenční přístup k mapě pád programu.
 
@@ -144,7 +144,7 @@ V Go můžete jako parametry funkce předávat hodnoty nebo ukazatele. Obecně j
 	go run main.go
 	```
 
-Všimněte si, že jsme předanou hodnotu jsme nezměnili. Vytvořili jsme nové číslo a to vrátili.
+Všimněte si, že jsme předanou hodnotu nezměnili. Vytvořili jsme nové číslo a to vrátili.
 
 Pokud chcete hodnotu měnit a tyto změny zachovat, předejte je za použití ukazatele:
 

@@ -22,7 +22,7 @@ Go používá typy, jejichž výčet vás jistě nijak nepřekvapí.
 Typy dle implementace.  (64 bitů na 64 bitových platformách, 32 bitů on 32 bitových platformách)
 
 	uint     32 nebo 64 bitů
-	int      stejně velká jako as uint
+	int      stejně velká jako uint
 	uintptr  kladné celé číslo dostatečně velké pro uložených neinterpretovaných bitů ukazatele
 
 # Nečíselné typy
@@ -152,7 +152,7 @@ GOPATH je kořenová složka pracovního prostoru a obsahuje tyto tři složky:
 
 Váš zdrojový kód, a kód závislostí je ve složce "src"
 
-Když zkompilujete aplikace, je umístěna do složky "bin".
+Když aplikaci zkompilujete, je umístěna do složky "bin".
 
 Když zkompilujete jakoukoliv knihovnu, je umístěna do složky "pkg". V ní pak do subsložky podle architektury vašeho počítače. Například pkg/darwin_amd64.
 
@@ -191,7 +191,7 @@ Je však možné mít "čístou louku" pro sady projektů nebo dokonce jednotliv
 
 
 
-Přečtěte si první půlku tohoto článku a poté si vyzkoušejte cvičení "Your First Program" (Můj první program) a "Your First Library" (Moje první knihovna)
+Přečtěte si první půlku následujícího článku a poté si vyzkoušejte cvičení "Your First Program" (Můj první program) a "Your First Library" (Moje první knihovna)
 
 [Začínáme s Go](https://golang.org/doc/code.html)
 
