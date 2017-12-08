@@ -1,25 +1,25 @@
 # Languages
 
 * [Arabic](ar/)
-* [German](de/)
+* [Brazilian Portuguese](pt-br/)
+* [Chinese](zh/)
+* [Czech](cs/)
+* [Dutch](nl/)
 * [English](en/)
 * [Español](es/)
 * [French](fr/)
+* [German](de/)
 * [Hebrew](he/)
 * [Italian](it/)
 * [Japanese](ja/)
 * [Korean](ko/)
-* [Dutch](nl/)
 * [Polish](pl/)
 * [Portuguese](pt/)
-* [Brazilian Portuguese](pt-br/)
 * [Russian](ru/)
 * [Romanian](ro/)
 * [Swedish](sv/)
 * [Turkish](tr/)
 * [Ukranian](uk/)
-* [Chinese](zh/)
-
 
 [Language codes](https://www.loc.gov/standards/iso639-2/php/code_list.php)
 
