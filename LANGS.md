@@ -1,3 +1,6 @@
+# Learn Go 
+Welcome to the Open Source Book "Learn Go".  To begin, please select your language below:
+
 # Languages
 
 * [Arabic](ar/)
