@@ -9,7 +9,6 @@ Array (pole) má pevnou délku a pevný datový typ.
 	go run main.go
 	```
 
-
 # Iterace
 
 Polem iterujeme použitím cyklu for
@@ -20,7 +19,6 @@ Polem iterujeme použitím cyklu for
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
 	go run main.go
 	```
-
 
 For je jediný druh cyklu v Go. Používejte jej místo FOR, WHILE, DO WHILE, DO UNTIL, atd.
 
@@ -59,7 +57,6 @@ Pokud nevíte že máte konečný a pevný seznam prvků, skoro vždy budete př
 	go run main.go
 	```
 
-
 # Proč slice?
 
 - Každá změna array alokuje nové array. Neefektivní!
@@ -83,7 +80,6 @@ Přidání prvků jsme si již ukázali, slice lze rovnou definovat i včetně v
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/slice
 	go run main.go
 	```
-
 
 # Řetězce
 
@@ -112,7 +108,6 @@ Mapu inicializujeme přes make() funkci.
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/maps
 	go run main.go
 	```
-
 
 # Mapy
 
