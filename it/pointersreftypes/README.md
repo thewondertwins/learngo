@@ -4,9 +4,10 @@ Gli array hanno una capacità prefissata, e un tipo predefinito.
 
 - Esempio di Array
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
 	go run main.go
-
+    ```
 
 # Iterare
 
@@ -14,9 +15,10 @@ Iterare su un array usando il ciclo for
 
 - Iterare con il for
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
 	go run main.go
-
+    ```
 
 For è l'unico costrutto che rappresenta un ciclo in Go. Può essere usato per implementare FOR, WHILE, DO WHILE, DO UNTIL, etc.
 
@@ -26,8 +28,10 @@ Puoi anche iterare su una collezione in Go utilizzando l'istruzione range. Range
 
 - Iterate with Range
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
 	go run main.go
+    ```
 
 Range è molto utile, e lo vedrete spesso.
 
@@ -47,9 +51,10 @@ A meno che non sappiate a priori che la vostra lista conterrà un numero finito 
 
 - Esempio di Slice
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/slice
 	go run main.go
-
+    ```
 
 # Perché slice?
 
@@ -70,9 +75,10 @@ Abbiamo mostrato come usare la append per aggiungere valori ad una slice, ma è 
 
 - Dichiarazione di una slice inline
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/slice
 	go run main.go
-
+    ```
 
 # Stringhe
 
@@ -82,8 +88,10 @@ Una stringa è semplicemente una slice di byte. Go include nativamente il suppor
 
 - Esempio di Rune
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/runes
 	go run main.go
+    ```
 
 # Mappe
 
@@ -95,15 +103,19 @@ Una mappa si inizializza per mezzo della funzione make().
 
 - Esempio di Mappa
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/maps
 	go run main.go
+    ```
 
 Le chiavi di una mappa devono necessariamente avere la definizione degli operatori di uguaglianza e disuguaglianza "==" e "!=". Per questo motivo non è possibile usare funzioni, mappe o slice come chiavi di una mappa.
 
 - Anche le mappe possono essere dichiarate inline:
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/mapsinline
 	go run main.go
+    ```
 
 # Mappe Concorrenza
 
@@ -119,8 +131,10 @@ Go consente il passaggio di parametri a funzione per valore o per riferimento. G
 
 - Esempio di passaggio parametro per valore
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/passbyval
 	go run main.go
+    ```
 
 Notare che non abbiamo modificato il valore che è stato passato in ingresso, abbiamo invece creato un nuovo intero e restituito questo come risultato.
 
@@ -128,8 +142,10 @@ Se fosse necessario operare su un valore e far si che venga modificato durante l
 
 - Esempio di passaggio parametro per riferimento
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/passbyref
 	go run main.go
+    ```
 
 # Dereferenziare un puntatore
 

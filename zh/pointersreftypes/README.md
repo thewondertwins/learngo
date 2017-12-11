@@ -4,9 +4,10 @@ Arrays have a fixed length and fixed data type.
 
 - Array Example
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
 	go run main.go
-
+    ```
 
 # Iterating
 
@@ -14,9 +15,10 @@ Iterate over the array using a for loop
 
 - Iterate with For
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
 	go run main.go
-
+    ```
 
 For is the only loop construct in Go. Use it for FOR, WHILE, DO WHILE, DO UNTIL, etc.
 
@@ -26,8 +28,10 @@ You can also iterate over any collection in Go using the range statement. Range 
 
 - Iterate with Range
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
 	go run main.go
+    ```
 
 Range is very powerful, you'll use it often.
 
@@ -48,9 +52,10 @@ Unless you know that your list will contain a finite and fixed set of elements, 
 
 - Slice Examples 
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/slice
 	go run main.go
-
+    ```
 
 # Why slices?
 
@@ -71,9 +76,10 @@ We've shown using append to add values to a slice but you can also declare the e
 
 - Slice Inline Declaration
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/slice
 	go run main.go
-
+    ```
 
 # Strings
 
@@ -83,8 +89,10 @@ A string is just a slice of bytes. Go has built-in support for UTF-8, and strong
 
 - Rune Example 
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/runes
 	go run main.go
+    ```
 
 # Maps
 
@@ -96,9 +104,10 @@ Initialize a map with the make() function.
 
 - Map Example 
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/maps
 	go run main.go
-
+    ```
 
 # Maps
 
@@ -106,8 +115,10 @@ Map keys must define the "==" and "!=" operators. therefore you can't use functi
 
 - Maps can be declared inline too:
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/mapsinline
 	go run main.go
+    ```
 
 # Map Concurrency
 
@@ -123,8 +134,10 @@ Go lets you pass function parameters by value or by reference. You will generall
 
 - Pass by Value Example
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/passbyval
 	go run main.go
+    ```
 
 Notice that we didn't modify the value that was passed in, we created a new integer and returned that as the result.
 
@@ -132,8 +145,10 @@ If you want to operate on a value and have it modified during the operation, pas
 
 - Pass by Reference Example
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/passbyref
 	go run main.go
+    ```
 
 # Pointer Dereferencing
 

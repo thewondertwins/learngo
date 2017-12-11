@@ -4,9 +4,10 @@ Array-urile au o dimensiune fixă și un tip de date de asemenea fix.
 
 - Exemplu de array
 
+    ```
     cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
     go run main.go
-
+    ```
 
 # Iteratii
 
@@ -14,8 +15,10 @@ Iterarea asupra unui array utilizând structura repetitivă for
 
 - Iterarea cu for
 
+    ```
     cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
     go run main.go
+    ```
 
 For reprezintă unică structura repetitivă în Go. Utilizează-o când ai nevoie de FOR, WHILE, DO WHILE, DO UNTIL, etc.
 
@@ -25,8 +28,10 @@ Poți, de asemenea, itera asupra oricărei colecții în Go prin utilizarea come
 
 - Iterarea cu Range
 
+    ```
     cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
     go run main.go
+    ```
 
 Range este un concept foarte puternic în Go și îl vei utiliza foarte mult.
 
@@ -47,9 +52,10 @@ Aproape întotdeauna vei dori să utilizezi un slice cu excepția cazului în ca
 
 - Exemple cu slice-uri 
 
+    ```
     cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/slice
     go run main.go
-
+    ```
 
 # De ce să utilizăm slice-urile?
 
@@ -70,9 +76,10 @@ Am arătat în exemplele precedente utilizarea funcției append în adăugarea d
 
 - Declararea dintr-o bucată a unui slice
 
+    ```
     cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/slice
     go run main.go
-
+    ```
 
 # Siruri de caractere (string-uri)
 
@@ -82,8 +89,10 @@ Un șir de caractere, sau un string, nu este altceva decât un slice de octeți.
 
 - Exemplu de rune 
 
+    ```
     cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/runes
     go run main.go
+    ```
 
 # Dictionare
 
@@ -95,9 +104,10 @@ Initializarea unui dicționar se face cu ajutorul funcției make().
 
 - Exemplu de dicționar 
 
+    ```
     cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/maps
     go run main.go
-
+    ```
 
 # Dictionare
 
@@ -105,8 +115,10 @@ Cheile dintr-un dicționar trebuie să suporte operatorii "==" și "!=". Prin ur
 
 - Si dicționarele pot fi declarate dintr-o bucată:
 
+    ```
     cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/mapsinline
     go run main.go
+    ```
 
 # Concurenta în cazul dictionarelor
 
@@ -122,8 +134,10 @@ Go ne permite să pasăm parametri unei funcții, fie prin valoare sau prin refe
 
 - Exemplu cu pasare prin valoare
 
+    ```
     cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/passbyval
     go run main.go
+    ```
 
 Dupa cum se poate observă, nu am modificat valoarea pe care am păsat-o, doar am creat o nouă valoare pe care am returnat-o că rezultat.
 
@@ -131,8 +145,10 @@ Daca dorești să operezi asupra unei valori și dorești că această valoarea 
 
 - Exemplu cu pasare prin referință
 
+    ```
     cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/passbyref
     go run main.go
+    ```
 
 # Dereferentierea unui pointer
 

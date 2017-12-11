@@ -4,8 +4,10 @@ Array haben eine feste Länge und einen festen Datentyp.
 
 - Array Beispiel
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
 	go run main.go
+    ```
 
 # Iteration - wiederholte Anweisungen (Schleifen)
 
@@ -13,9 +15,10 @@ Iterieren über ein Array mit der for-Schleife
 
 - Iteriere mit der for-Schleife
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
 	go run main.go
-
+    ```
 
 Die for Anweisung ist die einzige Schleife in Go. Sie lässt sich als FOR, WHILE, DO WHILE, DO UNTIL, etc.  benutzen
 
@@ -25,8 +28,10 @@ Mit der Range Anweisung kann man über einen Bereich (Range) iterieren. Range is
 
 - Iteriere mit Range
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
 	go run main.go
+    ```
 
 Range ist sehr mächtig, es wird daher sehr häufig angwendet.
 
@@ -46,8 +51,10 @@ Obwohl man weiß, das die Liste (Array) eine endliche und feste Anzahl von Eleme
 
 - Ausschnitt (Slice) Beispiele 
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/slice
 	go run main.go
+    ```
 
 # Warum Ausschnitte? (Slices)
 
@@ -68,9 +75,10 @@ Wir haben gezeigt, wie man mittels append, Daten zum Ausschnitt hinzufügt. Aber
 
 - Ausschnitt Inlne Deklaration
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/slice
 	go run main.go
-
+    ```
 
 # Strings (Zeichenfolgen)
 
@@ -80,8 +88,10 @@ Ein String ist einfach ein Ausschnitt von Bytes. Go hat von Haus aus Support fü
 
 - Runen Beispiel 
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/runes
 	go run main.go
+    ```
 
 # Maps
 
@@ -103,8 +113,10 @@ Map Schlüssel werden durch die Operatoren "==" (gleich) und "!=" (ungleich) def
 
 - Maps können ebenfalls Inline deklariert werden:
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/mapsinline
 	go run main.go
+    ```
 
 # Map Nebenläufigkeit (Concurrency)
 
@@ -120,8 +132,10 @@ In Go können Funktions Paramter mittels Wert (Value) oder Referenz übergeben w
 
 - Übergabe mittels Wert Beispiel
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/passbyval
 	go run main.go
+    ```
 
 Beachte: der übergebene Wert außerhalb der Funktion wird nicht modifiziert. es wird innerhalb der Funktion ein neuer Integer Wert erzeugt und das Ergebniss wird zurückgegeben.
 
@@ -129,8 +143,10 @@ Soll der Wert durch Operationen innerhalb der Funktion geändert werden, so muß
 
 - Übergabe mittels Referenz Beispiel
 
+    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/passbyref
 	go run main.go
+    ```
 
 # Zeiger Dereferenzierung 
 

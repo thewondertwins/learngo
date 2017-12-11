@@ -56,6 +56,7 @@ Atom avec go-plus
 
 IntelliJ IDEA avec le plugin Go
 
+GoLand
 
 ## Le Go Playground
 
