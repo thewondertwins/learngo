@@ -2,23 +2,19 @@
 
 Array-urile au o dimensiune fixă și un tip de date de asemenea fix.
 
-- Exemplu de array
+## Exemplu de array
 
-    ```
     cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
     go run main.go
-    ```
 
 # Iteratii
 
 Iterarea asupra unui array utilizând structura repetitivă for
 
-- Iterarea cu for
+## Iterarea cu for
 
-    ```
     cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
     go run main.go
-    ```
 
 For reprezintă unică structura repetitivă în Go. Utilizează-o când ai nevoie de FOR, WHILE, DO WHILE, DO UNTIL, etc.
 
@@ -26,12 +22,10 @@ For reprezintă unică structura repetitivă în Go. Utilizează-o când ai nevo
 
 Poți, de asemenea, itera asupra oricărei colecții în Go prin utilizarea comenzii range. Range reprezintă o funcție internă a limbajului care returnează indexul (poziția) și valoarea fiecărui element dintr-o colecție și care poate fi aplicată mai multor tipuri de colecții, printre care și array-uri:
 
-- Iterarea cu Range
+## Iterarea cu Range
 
-    ```
     cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
     go run main.go
-    ```
 
 Range este un concept foarte puternic în Go și îl vei utiliza foarte mult.
 
@@ -50,12 +44,10 @@ Un array are dimensiune fixă. Un slice, pe de altă parte, are dimensiune varia
 
 Aproape întotdeauna vei dori să utilizezi un slice cu excepția cazului în care cunoști dinainte ce dimensiune va avea colecția ta, situație în care vei folosi un array.
 
-- Exemple cu slice-uri 
+## Exemple cu slice-uri 
 
-    ```
     cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/slice
     go run main.go
-    ```
 
 # De ce să utilizăm slice-urile?
 
@@ -74,12 +66,10 @@ Slice-urile nu au dimensiunea specificată în declarare:
 
 Am arătat în exemplele precedente utilizarea funcției append în adăugarea de noi valori unui slice existent dar este posibil să declarăm slice-ul cu toate valorile dintr-o bucată:
 
-- Declararea dintr-o bucată a unui slice
+## Declararea dintr-o bucată a unui slice
 
-    ```
     cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/slice
     go run main.go
-    ```
 
 # Siruri de caractere (string-uri)
 
@@ -87,12 +77,10 @@ Sirurile de caractere nu sunt altceva decât slice-uri de octeți
 
 Un șir de caractere, sau un string, nu este altceva decât un slice de octeți. Go are suport integrat pentru UTF-8 și instrumente puternice de lucru cu caractere non-ASCII. Deși caracterele ASCII ocupă un singur octet, caractere de tip UTF-8 (sau rune-uri) pot ocupă până la 4 octeți. Go este capabil să manipuleze cu lejeritate rune-uri de tip mulți-octet.
 
-- Exemplu de rune 
+## Exemplu de rune 
 
-    ```
     cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/runes
     go run main.go
-    ```
 
 # Dictionare
 
@@ -102,23 +90,19 @@ Dictionarele trebuie să fie initializate înainte de a fi utilizate.
 
 Initializarea unui dicționar se face cu ajutorul funcției make().
 
-- Exemplu de dicționar 
+## Exemplu de dicționar 
 
-    ```
     cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/maps
     go run main.go
-    ```
 
 # Dictionare
 
 Cheile dintr-un dicționar trebuie să suporte operatorii "==" și "!=". Prin urmare, nu pot fi utilizate funcții, dicționare sau slice-uri ca și tipuri de date pentru chei.
 
-- Si dicționarele pot fi declarate dintr-o bucată:
+## Si dicționarele pot fi declarate dintr-o bucată:
 
-    ```
     cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/mapsinline
     go run main.go
-    ```
 
 # Concurenta în cazul dictionarelor
 
@@ -132,23 +116,19 @@ Inainte de Go 1.7, accesul concurent asupra unui dicționar cauza o serie de com
 
 Go ne permite să pasăm parametri unei funcții, fie prin valoare sau prin referință. În general, parametrii vor fi pasați prin valoare când variabilă nu va fi utilizată după închiderea funcției.
 
-- Exemplu cu pasare prin valoare
+## Exemplu cu pasare prin valoare
 
-    ```
     cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/passbyval
     go run main.go
-    ```
 
 Dupa cum se poate observă, nu am modificat valoarea pe care am păsat-o, doar am creat o nouă valoare pe care am returnat-o că rezultat.
 
 Daca dorești să operezi asupra unei valori și dorești că această valoarea să fie modificată în cadrul funcției, atunci trebuie pasată prin referință prin intermediul unui pointer:
 
-- Exemplu cu pasare prin referință
+## Exemplu cu pasare prin referință
 
-    ```
     cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/passbyref
     go run main.go
-    ```
 
 # Dereferentierea unui pointer
 
