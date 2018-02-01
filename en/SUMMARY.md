@@ -11,3 +11,5 @@
 * [Code Like the Go Team](goteam/README.md)
 * [Effective Error Management](errmgmt/README.md)
 * [Embracing the Standard Library](embracestd/README.md)
+* [Creating Useful Interfaces](usefulinterfaces/README.md)
+* [Wrangling Concurrency](wranglingconcurrency/README.md)
