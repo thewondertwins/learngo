@@ -13,3 +13,4 @@
 * [Embracing the Standard Library](embracestd/README.md)
 * [Creating Useful Interfaces](usefulinterfaces/README.md)
 * [Wrangling Concurrency](wranglingconcurrency/README.md)
+* [Profiling and Benchmarking](profbench/README.md)
