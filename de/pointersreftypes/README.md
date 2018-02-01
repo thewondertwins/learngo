@@ -2,23 +2,19 @@
 
 Array haben eine feste Länge und einen festen Datentyp.
 
-- Array Beispiel
+## Array Beispiel
 
-    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
 	go run main.go
-    ```
 
 # Iteration - wiederholte Anweisungen (Schleifen)
 
 Iterieren über ein Array mit der for-Schleife
 
-- Iteriere mit der for-Schleife
+## Iteriere mit der for-Schleife
 
-    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
 	go run main.go
-    ```
 
 Die for Anweisung ist die einzige Schleife in Go. Sie lässt sich als FOR, WHILE, DO WHILE, DO UNTIL, etc.  benutzen
 
@@ -26,12 +22,10 @@ Die for Anweisung ist die einzige Schleife in Go. Sie lässt sich als FOR, WHILE
 
 Mit der Range Anweisung kann man über einen Bereich (Range) iterieren. Range ist die eingebaute Iterations-Funktion, die einen Index und einen Wert zurück liefert. Sie kann auf vielen verschiedenen Collection-Typen angewendet werden, inklusive Arrays:
 
-- Iteriere mit Range
+## Iteriere mit Range
 
-    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
 	go run main.go
-    ```
 
 Range ist sehr mächtig, es wird daher sehr häufig angwendet.
 
@@ -49,12 +43,10 @@ Ein Array hat eine feste Länge im Gegensatz dazu ein Auschnitt (Slice), hat ein
 
 Obwohl man weiß, das die Liste (Array) eine endliche und feste Anzahl von Elementen beinhaltet, benutzt man fast immer einen Ausschnitt zur Handhabung von Daten.
 
-- Ausschnitt (Slice) Beispiele 
+## Ausschnitt (Slice) Beispiele 
 
-    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/slice
 	go run main.go
-    ```
 
 # Warum Ausschnitte? (Slices)
 
@@ -73,12 +65,10 @@ Ausschnitte haben keine Angabe der Länge in der Deklaration:
 
 Wir haben gezeigt, wie man mittels append, Daten zum Ausschnitt hinzufügt. Aber man kann auch den gesamten Ausschnitt auf einmal deklarien inklusive Werten:
 
-- Ausschnitt Inlne Deklaration
+## Ausschnitt Inlne Deklaration
 
-    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/slice
 	go run main.go
-    ```
 
 # Strings (Zeichenfolgen)
 
@@ -86,12 +76,10 @@ Strings sind Slices von Bytes
 
 Ein String ist einfach ein Ausschnitt von Bytes. Go hat von Haus aus Support für UTF-8 und mächtige Werkzeuge zur Arbeit mit nicht ascii Zeichen. ASCII Zeichen nehmen nur ein einzelnes Byte, eines UTF-8 Zeichens (oder Rune) der Länge von 4 Bytes ein. Go erlaubt die einfache Handhabung von Multi-Byte Runen.
 
-- Runen Beispiel 
+## Runen Beispiel 
 
-    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/runes
 	go run main.go
-    ```
 
 # Maps
 
@@ -101,7 +89,7 @@ Maps müssen initialisert werden, bevor sie benutzt werden können.
 
 Initialisierung einer map erfolgt mittels der Funktion make().
 
-- Map Beispiel
+## Map Beispiel
 
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/maps
 	go run main.go
@@ -111,12 +99,10 @@ Initialisierung einer map erfolgt mittels der Funktion make().
 
 Map Schlüssel werden durch die Operatoren "==" (gleich) und "!=" (ungleich) definiert, deswegen können keine Funktionen, Maps oder Slices als Schlüssel der Maps benutzt werden.
 
-- Maps können ebenfalls Inline deklariert werden:
+## Maps können ebenfalls Inline deklariert werden:
 
-    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/mapsinline
 	go run main.go
-    ```
 
 # Map Nebenläufigkeit (Concurrency)
 
@@ -130,23 +116,19 @@ Vor Go 1.7, hätte nebenläufiger Zugriff auf eine Map, Unzuverlässlichkeit des
 
 In Go können Funktions Paramter mittels Wert (Value) oder Referenz übergeben werden. Wenn der Wert eine kurze Lebenszeit hat und nach dem Funktionsaufruf nicht mehr benötigt wird, dann übergibt man im allgemeinen mittels Wertübergabe (pass oder call-by-value).
 
-- Übergabe mittels Wert Beispiel
+## Übergabe mittels Wert Beispiel
 
-    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/passbyval
 	go run main.go
-    ```
 
 Beachte: der übergebene Wert außerhalb der Funktion wird nicht modifiziert. es wird innerhalb der Funktion ein neuer Integer Wert erzeugt und das Ergebniss wird zurückgegeben.
 
 Soll der Wert durch Operationen innerhalb der Funktion geändert werden, so muß er mittels Referenz als Zeiger übergeben werden:
 
-- Übergabe mittels Referenz Beispiel
+## Übergabe mittels Referenz Beispiel
 
-    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/passbyref
 	go run main.go
-    ```
 
 # Zeiger Dereferenzierung 
 

@@ -2,23 +2,19 @@
 
 Gli array hanno una capacità prefissata, e un tipo predefinito.
 
-- Esempio di Array
+## Esempio di Array
 
-    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
 	go run main.go
-    ```
 
 # Iterare
 
 Iterare su un array usando il ciclo for
 
-- Iterare con il for
+## Iterare con il for
 
-    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
 	go run main.go
-    ```
 
 For è l'unico costrutto che rappresenta un ciclo in Go. Può essere usato per implementare FOR, WHILE, DO WHILE, DO UNTIL, etc.
 
@@ -26,12 +22,10 @@ For è l'unico costrutto che rappresenta un ciclo in Go. Può essere usato per i
 
 Puoi anche iterare su una collezione in Go utilizzando l'istruzione range. Range è una funzione iterativa inclusa nel linguaggio, che restituisce l'indice e il valore di diversi tipi di collezione, inclusi gli array:
 
-- Iterate with Range
+## Iterate with Range
 
-    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
 	go run main.go
-    ```
 
 Range è molto utile, e lo vedrete spesso.
 
@@ -49,12 +43,10 @@ Un array ha una dimensione prefissata. Una slice, al contrario, è una vista con
 
 A meno che non sappiate a priori che la vostra lista conterrà un numero finito e fisso di elementi, probabilmente andrete ad utilizzare quasi sempre le slice per gestire i dati.
 
-- Esempio di Slice
+## Esempio di Slice
 
-    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/slice
 	go run main.go
-    ```
 
 # Perché slice?
 
@@ -73,12 +65,10 @@ Le slice non hanno la definizione della capacità nella dichiarazione:
 
 Abbiamo mostrato come usare la append per aggiungere valori ad una slice, ma è anche possibile dichiarare una intera slice ed i suoi valori contemporaneamente:
 
-- Dichiarazione di una slice inline
+## Dichiarazione di una slice inline
 
-    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/slice
 	go run main.go
-    ```
 
 # Stringhe
 
@@ -86,12 +76,10 @@ Le Strighe sono Slice di Byte
 
 Una stringa è semplicemente una slice di byte. Go include nativamente il supporto per UTF-8, e gli strumenti per lavorare con caratteri non ASCII. Al contrario dei caratteri ASCII che occupano solo un singolo byte, i caratteri UTF-8 (detti anche Rune) possono occupare fino a 4 byte. Go vi consente di gestire facilmente rune composte da più byte.
 
-- Esempio di Rune
+## Esempio di Rune
 
-    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/runes
 	go run main.go
-    ```
 
 # Mappe
 
@@ -101,21 +89,17 @@ Le mappe devono essere inizializzate prima di poter essere usate.
 
 Una mappa si inizializza per mezzo della funzione make().
 
-- Esempio di Mappa
+## Esempio di Mappa
 
-    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/maps
 	go run main.go
-    ```
 
 Le chiavi di una mappa devono necessariamente avere la definizione degli operatori di uguaglianza e disuguaglianza "==" e "!=". Per questo motivo non è possibile usare funzioni, mappe o slice come chiavi di una mappa.
 
-- Anche le mappe possono essere dichiarate inline:
+## Anche le mappe possono essere dichiarate inline:
 
-    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/mapsinline
 	go run main.go
-    ```
 
 # Mappe Concorrenza
 
@@ -129,23 +113,19 @@ Prima di Go 1.7, l'accesso concorrente ad una mappa avrebbe avuto come esito un 
 
 Go consente il passaggio di parametri a funzione per valore o per riferimento. Generalmente passerete parametri per valore quando il tipo ha una vita breve e non dovrà essere usato dopo la chiamata a funzione.
 
-- Esempio di passaggio parametro per valore
+## Esempio di passaggio parametro per valore
 
-    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/passbyval
 	go run main.go
-    ```
 
 Notare che non abbiamo modificato il valore che è stato passato in ingresso, abbiamo invece creato un nuovo intero e restituito questo come risultato.
 
 Se fosse necessario operare su un valore e far si che venga modificato durante l'operazione, questo deve essere passato per riferimento usando un puntatore:
 
-- Esempio di passaggio parametro per riferimento
+## Esempio di passaggio parametro per riferimento
 
-    ```
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/passbyref
 	go run main.go
-    ```
 
 # Dereferenziare un puntatore
 
