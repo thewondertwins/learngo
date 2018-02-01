@@ -14,3 +14,5 @@
 * [Creating Useful Interfaces](usefulinterfaces/README.md)
 * [Wrangling Concurrency](wranglingconcurrency/README.md)
 * [Profiling and Benchmarking](profbench/README.md)
+* [Writing Fast Code the First Time](fastfirst/README.md)
+* [Real World Testing](realtesting/README.md)
