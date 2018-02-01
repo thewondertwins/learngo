@@ -9,3 +9,5 @@
 
 ## Beyond the Basics
 * [Code Like the Go Team](goteam/README.md)
+* [Effective Error Management](errmgmt/README.md)
+* [Embracing the Standard Library](embracestd/README.md)
