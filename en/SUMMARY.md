@@ -16,3 +16,5 @@
 * [Profiling and Benchmarking](profbench/README.md)
 * [Writing Fast Code the First Time](fastfirst/README.md)
 * [Real World Testing](realtesting/README.md)
+* [Writing Scalable Services](scalablesvcs/README.md)
+* [Building Resilient Applications](resilientapps/README.md)
