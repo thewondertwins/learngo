@@ -22,3 +22,4 @@
 ## Distributed Computing with Go
 * [Distributed Communication](dcom/README.md)
 * [Distributed Architecture](architecture/README.md)
+* [Service and Peer Discovery](disco/README.md)
