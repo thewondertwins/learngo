@@ -23,3 +23,4 @@
 * [Distributed Communication](dcom/README.md)
 * [Distributed Architecture](architecture/README.md)
 * [Service and Peer Discovery](disco/README.md)
+* [Security, Authentication, Authorization](secauth/README.md)
