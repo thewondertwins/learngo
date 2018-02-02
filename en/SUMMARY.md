@@ -27,3 +27,5 @@
 * [Consensus](consensus/README.md)
 * [Distributed Tracing](disttrace/README.md)
 * [Offline and Nearline Processing](offlineproc/README.md)
+* [Frameworks and Toolkits](dcomframeworks/README.md)
+* [Deployment](dcomdeploy/README.md)
