@@ -1,7 +1,7 @@
-# Learn Go
+# Aprende Go
 
-Learn Go is a community sourced book for experienced developers coming to Go from other languages.  Rather than focusing on teaching fundamental patterns, we will focus on how to apply the knowledge you already have to Go.
+Aprende Go es un libro creado por la comunidad para desarrollares experimentados en otros lenguajes que están interesados en Go. En vez de enfocarnos en enseñar patrones fundamentales, vamos a enfocarnos en como aplicar su conocimiento existente a Go.
 
-This book will be seeded with learning materials from Brian Ketelsen's Go training classes.  These materials are simply a starting point.  The book should be a living document, and open to contributions of all sizes from anyone.
+Originalmente este libro será creado con materiales provenientes de los cursos de Brian Ketelsen. Tales materiales son simplemente un punto de inicio. El libro debe considerarse como un documento vivo, abierto a contribuciones de cualquier persona y de cualquier tamaño.
 
-This book is continuously deployed from the source code on [Github](https://github.com/thewondertwins/learngo).  You can contribute new content and translations there.  Authors and translators of all experience levels are welcomed and encouraged to join this educational project.
+Este libro se actualiza constantemente usando el código fuente hospedado en [Github](https://github.com/thewondertwins/learngo). Ahí usted puede contribuir nuevo contenido y traducciones. Autores y traductores con todo tipo de experiencia son aceptados y alentados a unirse a este proyecto educacional.
