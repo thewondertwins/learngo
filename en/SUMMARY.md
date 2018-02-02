@@ -26,3 +26,4 @@
 * [Security, Authentication, Authorization](secauth/README.md)
 * [Consensus](consensus/README.md)
 * [Distributed Tracing](disttrace/README.md)
+* [Offline and Nearline Processing](offlineproc/README.md)
