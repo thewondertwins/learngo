@@ -25,3 +25,4 @@
 * [Service and Peer Discovery](disco/README.md)
 * [Security, Authentication, Authorization](secauth/README.md)
 * [Consensus](consensus/README.md)
+* [Distributed Tracing](disttrace/README.md)
