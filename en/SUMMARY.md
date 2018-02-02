@@ -18,3 +18,7 @@
 * [Real World Testing](realtesting/README.md)
 * [Writing Scalable Services](scalablesvcs/README.md)
 * [Building Resilient Applications](resilientapps/README.md)
+
+## Distributed Computing with Go
+* [Distributed Communication](dcom/README.md)
+* [Distributed Architecture](architecture/README.md)
