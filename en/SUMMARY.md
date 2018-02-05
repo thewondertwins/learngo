@@ -18,3 +18,14 @@
 * [Real World Testing](realtesting/README.md)
 * [Writing Scalable Services](scalablesvcs/README.md)
 * [Building Resilient Applications](resilientapps/README.md)
+
+## Distributed Computing with Go
+* [Distributed Communication](dcom/README.md)
+* [Distributed Architecture](architecture/README.md)
+* [Service and Peer Discovery](disco/README.md)
+* [Security, Authentication, Authorization](secauth/README.md)
+* [Consensus](consensus/README.md)
+* [Distributed Tracing](disttrace/README.md)
+* [Offline and Nearline Processing](offlineproc/README.md)
+* [Frameworks and Toolkits](dcomframeworks/README.md)
+* [Deployment](dcomdeploy/README.md)
