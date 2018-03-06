@@ -73,7 +73,7 @@ io.ReadCloser - Typ, který má metodu, která čte data ze streamu a po skonče
 Kvalitní Interface definuje pouze malý počet specifických akcí:
 
 - Zápis bytů do bufferu (io.Writer)
-- Vrácení řetězce, který daný typ reprezentuje
+- Vrácení řetězce, který daný typ reprezentuje (fmt.Stringer)
 
 # Interface ze standardní knihovny
 

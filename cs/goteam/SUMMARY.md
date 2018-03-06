@@ -1,3 +1,3 @@
-# Summary
+# Obsah
 
-* [Introduction](README.md)
+* [Úvod](README.md)
