@@ -64,7 +64,7 @@ Společné prvky:
 
 ## Organizace balíčků - Aplikace
 
-Všechny balíčky, které jsme viděli jsou knihovny. Předpokládá se, že budou importovány a použity ve spustitelné programu jako je služba nebo nástroj příkazové řádky.
+Všechny balíčky, které jsme viděli jsou knihovny. Předpokládá se, že budou importovány a použity ve spustitelném programu jako je služba nebo nástroj příkazové řádky.
 
 Jak by měl být organizován kód vaší spustitelné aplikace?
 
@@ -188,7 +188,7 @@ Tyto konvence se běžně používají i v samotném zdrojovém kódu Go.
 
 ## Jmenné konvence - funkce a metody
 
-Funkcním v balíčku nepřidávejte do názvu jméno balíčku:
+Funkcím v balíčku nepřidávejte do názvu jméno balíčku:
 
 	SPRÁVNĚ:  log.Info()
 	ŠPATNĚ:   log.LogInfo()
@@ -224,17 +224,17 @@ Uvnitř balíčku oddělujte kód do logických celků.
 
 Pokud balíček pracuje s více objekty, ponechte logiku pro každý objekt ve vlastním souboru:
 
-	src/goteam/cviceni/sklad/postgres
+	src/goteam/exercises/inventory/postgres
 
-	objednavky.go
-	dodavatele.go
-	produkty.go
+	orders.go (objednavky.go)
+	suppliers.go (dodavatele.go)
+	products.go (produkty.go)
 
 V balíčku, který definuje vaše doménové objekty, definujte typy a jejich interface (rozhraní) pro každý objekt v odděleném souboru:
 
-	src/goteam/cviceni/sklad
+	src/goteam/exercises/inventory
 
-	objednavky.go -- Obsahuje typ Order (objednavka) a interface (rozhraní) OrderStorage (úložiště objednávek)
+    orders.go -- Obsahuje typ Order (objednavka) a interface (rozhraní) OrderStorage (úložiště objednávek)
 
 
 # Dodatečné tipy
