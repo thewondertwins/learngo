@@ -7,7 +7,7 @@ Array haben eine feste Länge und einen festen Datentyp.
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/array
 	go run main.go
 
-# Iteration - wiederholte Anweisungen (Schleifen)
+# Iteration - Wiederholte Anweisungen (Schleifen)
 
 Iterieren über ein Array mit der for-Schleife
 
@@ -35,13 +35,13 @@ Range ist sehr mächtig, es wird daher sehr häufig angwendet.
 
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/exercises/range
 
-Tip: führe die Multiplikation innerhalb der Funktion fmt.Println() aus.
+Tip: Führe die Multiplikation innerhalb der Funktion fmt.Println() aus.
 
 # Auschnitte (Slices)
 
-Ein Array hat eine feste Länge im Gegensatz dazu ein Auschnitt (Slice), hat eine dynamische Länge, eine flexible Sicjt (Ausschnitt) auf die Elemente eines Arrays. In der Praxis werden Ausschnitte häufiger genutzt, als Arrays.
+Ein Array hat eine feste Länge im Gegensatz dazu ein Auschnitt (Slice), hat eine dynamische Länge, eine flexible Sicht (Ausschnitt) auf die Elemente eines Arrays. In der Praxis werden Ausschnitte häufiger genutzt, als Arrays.
 
-Obwohl man weiß, das die Liste (Array) eine endliche und feste Anzahl von Elementen beinhaltet, benutzt man fast immer einen Ausschnitt zur Handhabung von Daten.
+Obwohl man weiß, dass die Liste (Array) eine endliche und feste Anzahl von Elementen beinhaltet, benutzt man fast immer einen Ausschnitt zur Handhabung von Daten.
 
 ## Ausschnitt (Slice) Beispiele 
 
@@ -65,7 +65,7 @@ Ausschnitte haben keine Angabe der Länge in der Deklaration:
 
 Wir haben gezeigt, wie man mittels append, Daten zum Ausschnitt hinzufügt. Aber man kann auch den gesamten Ausschnitt auf einmal deklarien inklusive Werten:
 
-## Ausschnitt Inlne Deklaration
+## Ausschnitt Inline Deklaration
 
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/slice
 	go run main.go
@@ -106,22 +106,22 @@ Map Schlüssel werden durch die Operatoren "==" (gleich) und "!=" (ungleich) def
 
 # Map Nebenläufigkeit (Concurrency)
 
-Maps sind NICHT Thread sicher. Es ist nicht erlaubt von einer Map zu lesen und eine Map zu ändern, in 2 verschiedenen goroutinen. Wir werden später darauf zurück kommen, in den Nebenläufigkeitslektionen. Wir merken uns folgendes dazu: Wenn wir eine Map haben die an mehreren Stellen benutzt wird, dann brauchen einiges an synchronisiertem Zugriff.
+Maps sind NICHT Thread sicher. Es ist nicht erlaubt von einer Map zu lesen und eine Map zu ändern, in 2 verschiedenen goroutinen. Wir werden später darauf zurückkommen, in den Nebenläufigkeitslektionen. Wir merken uns folgendes dazu: Wenn wir eine Map haben die an mehreren Stellen benutzt wird, dann muss eine Art vom synchronisiertem Zugriff erfolgen.
 
-Vor Go 1.7, hätte nebenläufiger Zugriff auf eine Map, Unzuverlässlichkeit des Programm zur Folge gehabt, auf Grund einer Race Condition. In Go 1.7 und später, nebenläufiger Zugriff auf eine Map bewirkt ein Stop des Programmes.
+Vor Go 1.7, hätte nebenläufiger Zugriff auf eine Map, die Unzuverlässlichkeit des Programm zur Folge gehabt, auf Grund einer Race Condition. In Go 1.7 und später, bewirkt der nebenläufiger Zugriff auf eine Map den Stop des Programmes.
 
  -- TODO -- sync.Map
 
 # Zeiger
 
-In Go können Funktions Paramter mittels Wert (Value) oder Referenz übergeben werden. Wenn der Wert eine kurze Lebenszeit hat und nach dem Funktionsaufruf nicht mehr benötigt wird, dann übergibt man im allgemeinen mittels Wertübergabe (pass oder call-by-value).
+In Go können Funktions Paramter mittels Wert (Value) oder Referenz übergeben werden. Wenn der Wert eine kurze Lebenszeit hat und nachdem Funktionsaufruf nicht mehr benötigt wird, dann übergibt man im allgemeinen mittels Wertübergabe (pass oder call-by-value).
 
 ## Übergabe mittels Wert Beispiel
 
 	cd $GOPATH/src/github.com/thewondertwins/learngo/material/pointersreftypes/demos/passbyval
 	go run main.go
 
-Beachte: der übergebene Wert außerhalb der Funktion wird nicht modifiziert. es wird innerhalb der Funktion ein neuer Integer Wert erzeugt und das Ergebniss wird zurückgegeben.
+Beachte: Der übergebene Wert außerhalb der Funktion wird nicht modifiziert. Es wird innerhalb der Funktion ein neuer Integer Wert erzeugt und das Ergebnis wird zurückgegeben.
 
 Soll der Wert durch Operationen innerhalb der Funktion geändert werden, so muß er mittels Referenz als Zeiger übergeben werden:
 
@@ -134,9 +134,9 @@ Soll der Wert durch Operationen innerhalb der Funktion geändert werden, so muß
 
 Zeiger Operationen sind ähnlich zu denen der C Programmiersprachen Familie, aber ohne Zeiger Arithmetik.
 
-Benuzte & um die Speicheraddresse einer Variable zu erhalten.
+Benutze & um die Speicheraddresse einer Variable zu erhalten.
 
-Benutze * zur Dereferenzierung des Inahaltes der Variable.
+Benutze * zur Dereferenzierung des Inhaltes der Variable.
 
 
 
